@@ -1,2 +1,0 @@
-#songs,#MHfuncs,#LSHfuncs,#bands,mMH,mLSH,pMH,TP,TN,FP,FN,LSH_Accuracy,LSH_Precision,LSH_Recall,LSH_F1,MH_Accuracy,MH_Precision,MH_Recall,MH_F1,threshold
-1000,600,3,30,20117,20117,338563,2,499495,0,3,0.999993993993994,1.0,0.4,0.5714285714285715,1.0,1.0,1.0,1.0,0.844
