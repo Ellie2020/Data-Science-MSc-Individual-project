@@ -68,8 +68,8 @@ spark = pyspark.sql.SparkSession.builder \
 ####################### similarity theshold ################
 
 def SIM_threshold(number_bands, number_minhashfunctions):
-    '''Given number of bands and lenght of MinHash signature
-	   it returns the optimal similarity thresold t
+    '''Given number of bands and length of MinHash signature
+	   it returns the optimal similarity threshold t
 	'''
     num_rows=(number_minhashfunctions/number_bands)   ## rows per band
     return np.round((1/number_bands)**(1/num_rows), 3)
