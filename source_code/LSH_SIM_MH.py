@@ -65,7 +65,7 @@ spark = pyspark.sql.SparkSession.builder \
     .config("xxxxxxxxxxxxxxxxxxxxxxxxx", xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)\
     .getOrCreate()
 
-####################### similarity theshold ###############################################
+####################### similarity threshold ###############################################
 
 def SIM_threshold(number_bands, number_minhashfunctions):
     '''Given number of bands and length of MinHash signature
