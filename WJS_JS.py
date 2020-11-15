@@ -49,8 +49,8 @@ import builtins
 songs=10000 ### enter number of songs to compare (pairwise)
 
 ########################################
-## Connector to the MongoDB database owned by Dr. Johan Pauwels. 
-## The connector was provided by Dr. Johan Pauwels
+## MongoDB database is owned by Dr Johan Pauwels. 
+## The connector was provided by Dr Johan Pauwels
 sc = pyspark.SparkContext.getOrCreate()
 spark = pyspark.sql.SparkSession.builder \
     .config("xxxxxxxxxxxxxxxxxxxxxxxxx", xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)\
