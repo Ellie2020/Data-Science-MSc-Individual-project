@@ -11,4 +11,6 @@ LSH_SIM_MH.py   code computational time and memory for LSH and MinHash similarit
 
 runSparkMongo.sh  sh file to run the python files on the server  
 
-README.txt detailed description for each file
+README.txt detailed description for each python file  
+
+several notebooks with the plots of chapter 3
