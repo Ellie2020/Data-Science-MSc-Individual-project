@@ -1,0 +1,1 @@
+LSH SIMILARITY THRESHOLD 0.316 for 100 bands and 4 rows per band and 30000 songs

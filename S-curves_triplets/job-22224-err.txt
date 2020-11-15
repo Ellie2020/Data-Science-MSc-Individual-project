@@ -1,0 +1,495 @@
+cuda version 10.0 is not available on this node 
+Ivy Default Cache set to: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/cache
+The jars for the packages stored in: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars
+:: loading settings :: url = jar:file:/vol/opt/spark/3.0.0-bin-without-hadoop/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.mongodb.spark#mongo-spark-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-ecec68ac-1363-424a-8986-7e7e764624a7;1.0
+	confs: [default]
+	found org.mongodb.spark#mongo-spark-connector_2.12;2.4.2 in spark-list
+	found org.mongodb#mongo-java-driver;3.12.5 in spark-list
+:: resolution report :: resolve 144ms :: artifacts dl 4ms
+	:: modules in use:
+	org.mongodb#mongo-java-driver;3.12.5 from spark-list in [default]
+	org.mongodb.spark#mongo-spark-connector_2.12;2.4.2 from spark-list in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   2   |   0   |   0   |   0   ||   2   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-ecec68ac-1363-424a-8986-7e7e764624a7
+	confs: [default]
+	0 artifacts copied, 2 already retrieved (0kB/7ms)
+2020-11-08 02:56:06,384 INFO spark.SparkContext: Running Spark version 3.0.0
+2020-11-08 02:56:06,412 INFO resource.ResourceUtils: ==============================================================
+2020-11-08 02:56:06,413 INFO resource.ResourceUtils: Resources for spark.driver:
+
+2020-11-08 02:56:06,414 INFO resource.ResourceUtils: ==============================================================
+2020-11-08 02:56:06,414 INFO spark.SparkContext: Submitted application: DLSH_TIME_MEM.py
+2020-11-08 02:56:06,470 INFO spark.SecurityManager: Changing view acls to: aczx101
+2020-11-08 02:56:06,470 INFO spark.SecurityManager: Changing modify acls to: aczx101
+2020-11-08 02:56:06,470 INFO spark.SecurityManager: Changing view acls groups to: 
+2020-11-08 02:56:06,470 INFO spark.SecurityManager: Changing modify acls groups to: 
+2020-11-08 02:56:06,470 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(aczx101); groups with view permissions: Set(); users  with modify permissions: Set(aczx101); groups with modify permissions: Set()
+2020-11-08 02:56:06,713 INFO util.Utils: Successfully started service 'sparkDriver' on port 41512.
+2020-11-08 02:56:06,746 INFO spark.SparkEnv: Registering MapOutputTracker
+2020-11-08 02:56:06,776 INFO spark.SparkEnv: Registering BlockManagerMaster
+2020-11-08 02:56:06,793 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2020-11-08 02:56:06,793 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2020-11-08 02:56:06,797 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2020-11-08 02:56:06,809 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-89d09f90-ea5c-4ce5-a870-123b5488b31c
+2020-11-08 02:56:06,830 INFO memory.MemoryStore: MemoryStore started with capacity 22.2 GiB
+2020-11-08 02:56:06,857 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2020-11-08 02:56:06,959 INFO util.log: Logging initialized @5278ms to org.sparkproject.jetty.util.log.Slf4jLog
+2020-11-08 02:56:07,101 INFO server.Server: jetty-9.4.z-SNAPSHOT; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_265-8u265-b01-0ubuntu2~16.04-b01
+2020-11-08 02:56:07,123 INFO server.Server: Started @5443ms
+2020-11-08 02:56:07,152 WARN util.Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2020-11-08 02:56:07,152 WARN util.Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+2020-11-08 02:56:07,152 WARN util.Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+2020-11-08 02:56:07,152 WARN util.Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+2020-11-08 02:56:07,152 WARN util.Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+2020-11-08 02:56:07,153 WARN util.Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+2020-11-08 02:56:07,153 WARN util.Utils: Service 'SparkUI' could not bind on port 4046. Attempting port 4047.
+2020-11-08 02:56:07,216 INFO server.AbstractConnector: Started ServerConnector@295d367{HTTP/1.1,[http/1.1]}{0.0.0.0:4047}
+2020-11-08 02:56:07,216 INFO util.Utils: Successfully started service 'SparkUI' on port 4047.
+2020-11-08 02:56:07,244 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@209155fd{/jobs,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,246 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@24bd7d59{/jobs/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,247 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@552a0ffb{/jobs/job,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,250 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4a3e796a{/jobs/job/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,250 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4268c238{/stages,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,251 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4367c872{/stages/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,251 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3faecd91{/stages/stage,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,253 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@fd509cd{/stages/stage/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,253 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3946e4be{/stages/pool,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,254 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2ca0760d{/stages/pool/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,255 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1d09f116{/storage,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,255 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d2b8db9{/storage/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,256 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@380d8dc4{/storage/rdd,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,256 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6f67a258{/storage/rdd/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,257 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@23902761{/environment,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,257 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1a9fd2f2{/environment/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,258 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7046c05d{/executors,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,258 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1afa71cc{/executors/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,259 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@746dbb7f{/executors/threadDump,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,260 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@722cb037{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,269 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@27aac0a0{/static,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,270 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3e757a8d{/,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,271 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@334c58ad{/api,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,271 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6284c73c{/jobs/job/kill,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,272 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3239bf95{/stages/stage/kill,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,274 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://dlt4n02.nsqdc.city.ac.uk:4047
+2020-11-08 02:56:07,305 INFO spark.SparkContext: Added JAR file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar at spark://dlt4n02.nsqdc.city.ac.uk:41512/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604804167305
+2020-11-08 02:56:07,306 INFO spark.SparkContext: Added JAR file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar at spark://dlt4n02.nsqdc.city.ac.uk:41512/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604804167306
+2020-11-08 02:56:07,307 INFO spark.SparkContext: Added file file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar at file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604804167307
+2020-11-08 02:56:07,308 INFO util.Utils: Copying /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar
+2020-11-08 02:56:07,320 INFO spark.SparkContext: Added file file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar at file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604804167320
+2020-11-08 02:56:07,320 INFO util.Utils: Copying /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb_mongo-java-driver-3.12.5.jar
+2020-11-08 02:56:07,461 INFO executor.Executor: Starting executor ID driver on host dlt4n02.nsqdc.city.ac.uk
+2020-11-08 02:56:07,486 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38607.
+2020-11-08 02:56:07,487 INFO netty.NettyBlockTransferService: Server created on dlt4n02.nsqdc.city.ac.uk:38607
+2020-11-08 02:56:07,488 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2020-11-08 02:56:07,494 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, dlt4n02.nsqdc.city.ac.uk, 38607, None)
+2020-11-08 02:56:07,500 INFO storage.BlockManagerMasterEndpoint: Registering block manager dlt4n02.nsqdc.city.ac.uk:38607 with 22.2 GiB RAM, BlockManagerId(driver, dlt4n02.nsqdc.city.ac.uk, 38607, None)
+2020-11-08 02:56:07,506 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, dlt4n02.nsqdc.city.ac.uk, 38607, None)
+2020-11-08 02:56:07,507 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, dlt4n02.nsqdc.city.ac.uk, 38607, None)
+2020-11-08 02:56:07,652 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d49c666{/metrics/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,917 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/enterprise.internal.city.ac.uk/aczx101/spark-warehouse').
+2020-11-08 02:56:07,917 INFO internal.SharedState: Warehouse path is 'file:/home/enterprise.internal.city.ac.uk/aczx101/spark-warehouse'.
+2020-11-08 02:56:07,930 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@46276edd{/SQL,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,930 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@60600c7{/SQL/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,931 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3ef2ae96{/SQL/execution,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,933 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@34561a7a{/SQL/execution/json,null,AVAILABLE,@Spark}
+2020-11-08 02:56:07,936 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@886e6f7{/static/sql,null,AVAILABLE,@Spark}
+2020-11-08 02:56:08,901 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 368.0 B, free 22.2 GiB)
+2020-11-08 02:56:08,946 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 444.0 B, free 22.2 GiB)
+2020-11-08 02:56:08,949 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 444.0 B, free: 22.2 GiB)
+2020-11-08 02:56:08,953 INFO spark.SparkContext: Created broadcast 0 from broadcast at MongoSpark.scala:542
+2020-11-08 02:56:09,114 INFO driver.cluster: Cluster created with settings {hosts=[c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-08 02:56:09,207 INFO driver.cluster: Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-11-08 02:56:09,278 INFO driver.connection: Opened connection [connectionId{localValue:1, serverValue:50250}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:09,293 INFO driver.cluster: Monitor thread successfully connected to server with description ServerDescription{address=c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 20]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9863638}
+2020-11-08 02:56:09,298 INFO connection.MongoClientCache: Creating MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 02:56:09,475 INFO driver.connection: Opened connection [connectionId{localValue:2, serverValue:50251}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:09,918 INFO spark.SparkContext: Starting job: treeAggregate at MongoInferSchema.scala:88
+2020-11-08 02:56:09,942 INFO scheduler.DAGScheduler: Got job 0 (treeAggregate at MongoInferSchema.scala:88) with 1 output partitions
+2020-11-08 02:56:09,943 INFO scheduler.DAGScheduler: Final stage: ResultStage 0 (treeAggregate at MongoInferSchema.scala:88)
+2020-11-08 02:56:09,943 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2020-11-08 02:56:09,945 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-08 02:56:09,950 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[4] at treeAggregate at MongoInferSchema.scala:88), which has no missing parents
+2020-11-08 02:56:09,982 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 7.3 KiB, free 22.2 GiB)
+2020-11-08 02:56:09,987 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.6 KiB, free 22.2 GiB)
+2020-11-08 02:56:09,988 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 3.6 KiB, free: 22.2 GiB)
+2020-11-08 02:56:09,989 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1200
+2020-11-08 02:56:10,010 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[4] at treeAggregate at MongoInferSchema.scala:88) (first 15 tasks are for partitions Vector(0))
+2020-11-08 02:56:10,012 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+2020-11-08 02:56:10,094 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7507 bytes)
+2020-11-08 02:56:10,114 INFO executor.Executor: Running task 0.0 in stage 0.0 (TID 0)
+2020-11-08 02:56:10,120 INFO executor.Executor: Fetching file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604804167320
+2020-11-08 02:56:10,158 INFO util.Utils: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar has been previously copied to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb_mongo-java-driver-3.12.5.jar
+2020-11-08 02:56:10,165 INFO executor.Executor: Fetching file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604804167307
+2020-11-08 02:56:10,166 INFO util.Utils: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar has been previously copied to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar
+2020-11-08 02:56:10,173 INFO executor.Executor: Fetching spark://dlt4n02.nsqdc.city.ac.uk:41512/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604804167305
+2020-11-08 02:56:10,225 INFO client.TransportClientFactory: Successfully created connection to dlt4n02.nsqdc.city.ac.uk/10.207.1.68:41512 after 39 ms (0 ms spent in bootstraps)
+2020-11-08 02:56:10,244 INFO util.Utils: Fetching spark://dlt4n02.nsqdc.city.ac.uk:41512/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/fetchFileTemp8399992240320376652.tmp
+2020-11-08 02:56:10,282 INFO util.Utils: /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/fetchFileTemp8399992240320376652.tmp has been previously copied to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar
+2020-11-08 02:56:10,288 INFO executor.Executor: Adding file:/tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar to class loader
+2020-11-08 02:56:10,288 INFO executor.Executor: Fetching spark://dlt4n02.nsqdc.city.ac.uk:41512/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604804167306
+2020-11-08 02:56:10,289 INFO util.Utils: Fetching spark://dlt4n02.nsqdc.city.ac.uk:41512/jars/org.mongodb_mongo-java-driver-3.12.5.jar to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/fetchFileTemp7175815529601863835.tmp
+2020-11-08 02:56:10,307 INFO util.Utils: /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/fetchFileTemp7175815529601863835.tmp has been previously copied to /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb_mongo-java-driver-3.12.5.jar
+2020-11-08 02:56:10,313 INFO executor.Executor: Adding file:/tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/userFiles-49510bc6-eef2-4457-a4fd-322aaa606f65/org.mongodb_mongo-java-driver-3.12.5.jar to class loader
+2020-11-08 02:56:12,152 INFO executor.Executor: Finished task 0.0 in stage 0.0 (TID 0). 3551 bytes result sent to driver
+2020-11-08 02:56:12,169 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2103 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-08 02:56:12,173 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2020-11-08 02:56:12,184 INFO scheduler.DAGScheduler: ResultStage 0 (treeAggregate at MongoInferSchema.scala:88) finished in 2.214 s
+2020-11-08 02:56:12,191 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-08 02:56:12,191 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+2020-11-08 02:56:12,194 INFO scheduler.DAGScheduler: Job 0 finished: treeAggregate at MongoInferSchema.scala:88, took 2.275366 s
+2020-11-08 02:56:12,862 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on dlt4n02.nsqdc.city.ac.uk:38607 in memory (size: 3.6 KiB, free: 22.2 GiB)
+2020-11-08 02:56:13,597 WARN util.package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2020-11-08 02:56:15,783 INFO sql.MongoRelation: requiredColumns: chordRatio, filters: 
+2020-11-08 02:56:16,262 INFO codegen.CodeGenerator: Code generated in 226.355213 ms
+2020-11-08 02:56:16,331 INFO codegen.CodeGenerator: Code generated in 55.816124 ms
+2020-11-08 02:56:16,400 INFO codegen.CodeGenerator: Code generated in 54.307912 ms
+2020-11-08 02:56:16,495 INFO spark.SparkContext: Starting job: collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126
+2020-11-08 02:56:16,580 INFO scheduler.DAGScheduler: Registering RDD 9 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126) as input to shuffle 0
+2020-11-08 02:56:16,584 INFO scheduler.DAGScheduler: Got job 1 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126) with 1 output partitions
+2020-11-08 02:56:16,584 INFO scheduler.DAGScheduler: Final stage: ResultStage 2 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126)
+2020-11-08 02:56:16,584 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+2020-11-08 02:56:16,587 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+2020-11-08 02:56:16,590 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126), which has no missing parents
+2020-11-08 02:56:16,611 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 101.1 KiB, free 22.2 GiB)
+2020-11-08 02:56:16,614 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 18.5 KiB, free 22.2 GiB)
+2020-11-08 02:56:16,615 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 18.5 KiB, free: 22.2 GiB)
+2020-11-08 02:56:16,616 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1200
+2020-11-08 02:56:16,621 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 02:56:16,621 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 8 tasks
+2020-11-08 02:56:16,625 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7515 bytes)
+2020-11-08 02:56:16,626 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 1, ANY, 7525 bytes)
+2020-11-08 02:56:16,627 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 2, ANY, 7525 bytes)
+2020-11-08 02:56:16,627 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 3, ANY, 7525 bytes)
+2020-11-08 02:56:16,627 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 4, ANY, 7525 bytes)
+2020-11-08 02:56:16,628 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 5, ANY, 7525 bytes)
+2020-11-08 02:56:16,628 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 6, ANY, 7525 bytes)
+2020-11-08 02:56:16,628 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 7, ANY, 7516 bytes)
+2020-11-08 02:56:16,629 INFO executor.Executor: Running task 0.0 in stage 1.0 (TID 1)
+2020-11-08 02:56:16,630 INFO executor.Executor: Running task 1.0 in stage 1.0 (TID 2)
+2020-11-08 02:56:16,631 INFO executor.Executor: Running task 2.0 in stage 1.0 (TID 3)
+2020-11-08 02:56:16,632 INFO executor.Executor: Running task 3.0 in stage 1.0 (TID 4)
+2020-11-08 02:56:16,632 INFO executor.Executor: Running task 4.0 in stage 1.0 (TID 5)
+2020-11-08 02:56:16,633 INFO executor.Executor: Running task 5.0 in stage 1.0 (TID 6)
+2020-11-08 02:56:16,633 INFO executor.Executor: Running task 6.0 in stage 1.0 (TID 7)
+2020-11-08 02:56:16,633 INFO executor.Executor: Running task 7.0 in stage 1.0 (TID 8)
+2020-11-08 02:56:16,805 INFO driver.connection: Opened connection [connectionId{localValue:3, serverValue:50255}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:16,806 INFO driver.connection: Opened connection [connectionId{localValue:7, serverValue:50253}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:16,806 INFO driver.connection: Opened connection [connectionId{localValue:9, serverValue:50257}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:16,806 INFO driver.connection: Opened connection [connectionId{localValue:5, serverValue:50252}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:16,807 INFO driver.connection: Opened connection [connectionId{localValue:8, serverValue:50256}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:16,808 INFO driver.connection: Opened connection [connectionId{localValue:4, serverValue:50258}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:16,813 INFO driver.connection: Opened connection [connectionId{localValue:6, serverValue:50254}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:56:17,298 INFO codegen.CodeGenerator: Code generated in 315.004547 ms
+2020-11-08 02:56:17,383 INFO executor.Executor: Finished task 7.0 in stage 1.0 (TID 8). 1744 bytes result sent to driver
+2020-11-08 02:56:17,385 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 757 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 02:56:18,297 INFO executor.Executor: Finished task 4.0 in stage 1.0 (TID 5). 1744 bytes result sent to driver
+2020-11-08 02:56:18,298 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 1671 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 02:56:18,372 INFO executor.Executor: Finished task 0.0 in stage 1.0 (TID 1). 1744 bytes result sent to driver
+2020-11-08 02:56:18,374 INFO executor.Executor: Finished task 2.0 in stage 1.0 (TID 3). 1744 bytes result sent to driver
+2020-11-08 02:56:18,374 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1750 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 02:56:18,375 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 1749 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 02:56:18,411 INFO executor.Executor: Finished task 6.0 in stage 1.0 (TID 7). 1744 bytes result sent to driver
+2020-11-08 02:56:18,413 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 1785 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 02:56:18,642 INFO executor.Executor: Finished task 3.0 in stage 1.0 (TID 4). 1744 bytes result sent to driver
+2020-11-08 02:56:18,643 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 2016 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 02:56:19,521 INFO executor.Executor: Finished task 5.0 in stage 1.0 (TID 6). 1744 bytes result sent to driver
+2020-11-08 02:56:19,523 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 2896 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 02:56:19,566 INFO executor.Executor: Finished task 1.0 in stage 1.0 (TID 2). 1744 bytes result sent to driver
+2020-11-08 02:56:19,568 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 2941 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 02:56:19,568 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2020-11-08 02:56:19,569 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126) finished in 2.968 s
+2020-11-08 02:56:19,570 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 02:56:19,571 INFO scheduler.DAGScheduler: running: Set()
+2020-11-08 02:56:19,571 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 2)
+2020-11-08 02:56:19,572 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 02:56:19,579 INFO scheduler.DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[15] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126), which has no missing parents
+2020-11-08 02:56:19,592 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 106.6 KiB, free 22.2 GiB)
+2020-11-08 02:56:19,594 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 22.3 KiB, free 22.2 GiB)
+2020-11-08 02:56:19,596 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 22.3 KiB, free: 22.2 GiB)
+2020-11-08 02:56:19,597 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1200
+2020-11-08 02:56:19,597 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[15] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126) (first 15 tasks are for partitions Vector(0))
+2020-11-08 02:56:19,597 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+2020-11-08 02:56:19,602 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 9, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-08 02:56:19,604 INFO executor.Executor: Running task 0.0 in stage 2.0 (TID 9)
+2020-11-08 02:56:19,646 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (14.3 MiB) non-empty blocks including 8 (14.3 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 02:56:19,647 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+2020-11-08 02:56:19,674 INFO codegen.CodeGenerator: Code generated in 8.762986 ms
+2020-11-08 02:56:20,368 INFO codegen.CodeGenerator: Code generated in 23.493077 ms
+2020-11-08 02:56:21,376 INFO python.PythonUDFRunner: Times: total = 1675, boot = 633, init = 89, finish = 953
+2020-11-08 02:56:21,386 INFO memory.MemoryStore: Block taskresult_9 stored as bytes in memory (estimated size 1773.7 KiB, free 22.2 GiB)
+2020-11-08 02:56:21,386 INFO storage.BlockManagerInfo: Added taskresult_9 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 1773.7 KiB, free: 22.2 GiB)
+2020-11-08 02:56:21,387 INFO executor.Executor: Finished task 0.0 in stage 2.0 (TID 9). 1816319 bytes result sent via BlockManager)
+2020-11-08 02:56:21,416 INFO client.TransportClientFactory: Successfully created connection to dlt4n02.nsqdc.city.ac.uk/10.207.1.68:38607 after 4 ms (0 ms spent in bootstraps)
+2020-11-08 02:56:21,475 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 9) in 1876 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-08 02:56:21,475 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2020-11-08 02:56:21,477 INFO storage.BlockManagerInfo: Removed taskresult_9 on dlt4n02.nsqdc.city.ac.uk:38607 in memory (size: 1773.7 KiB, free: 22.2 GiB)
+2020-11-08 02:56:21,477 INFO python.PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 52679
+2020-11-08 02:56:21,479 INFO scheduler.DAGScheduler: ResultStage 2 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126) finished in 1.892 s
+2020-11-08 02:56:21,480 INFO scheduler.DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-08 02:56:21,480 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+2020-11-08 02:56:21,481 INFO scheduler.DAGScheduler: Job 1 finished: collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH_TIME_MEM.py:126, took 4.985411 s
+2020-11-08 02:56:24,577 INFO connection.MongoClientCache: Closing MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 02:56:24,583 INFO driver.connection: Closed connection [connectionId{localValue:4, serverValue:50258}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,583 INFO driver.connection: Closed connection [connectionId{localValue:9, serverValue:50257}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,584 INFO driver.connection: Closed connection [connectionId{localValue:5, serverValue:50252}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,584 INFO driver.connection: Closed connection [connectionId{localValue:6, serverValue:50254}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,584 INFO driver.connection: Closed connection [connectionId{localValue:3, serverValue:50255}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,584 INFO driver.connection: Closed connection [connectionId{localValue:7, serverValue:50253}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,585 INFO driver.connection: Closed connection [connectionId{localValue:8, serverValue:50256}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:56:24,585 INFO driver.connection: Closed connection [connectionId{localValue:2, serverValue:50251}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:21,891 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on dlt4n02.nsqdc.city.ac.uk:38607 in memory (size: 22.3 KiB, free: 22.2 GiB)
+2020-11-08 02:59:21,895 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on dlt4n02.nsqdc.city.ac.uk:38607 in memory (size: 18.5 KiB, free: 22.2 GiB)
+2020-11-08 02:59:23,472 INFO sql.MongoRelation: requiredColumns: _id, filters: 
+2020-11-08 02:59:23,487 INFO sql.MongoRelation: requiredColumns: _id, filters: 
+2020-11-08 02:59:23,504 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 02:59:23,510 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 02:59:23,518 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 02:59:23,518 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 02:59:23,597 INFO codegen.CodeGenerator: Code generated in 12.529284 ms
+2020-11-08 02:59:23,614 INFO codegen.CodeGenerator: Code generated in 9.279124 ms
+2020-11-08 02:59:23,629 INFO codegen.CodeGenerator: Code generated in 11.167422 ms
+2020-11-08 02:59:23,641 INFO codegen.CodeGenerator: Code generated in 8.555057 ms
+2020-11-08 02:59:23,650 INFO codegen.CodeGenerator: Code generated in 6.53651 ms
+2020-11-08 02:59:23,668 INFO codegen.CodeGenerator: Code generated in 13.903855 ms
+2020-11-08 02:59:23,687 INFO codegen.CodeGenerator: Code generated in 11.164131 ms
+2020-11-08 02:59:23,694 INFO codegen.CodeGenerator: Code generated in 5.44506 ms
+2020-11-08 02:59:23,747 INFO codegen.CodeGenerator: Code generated in 18.585979 ms
+2020-11-08 02:59:23,763 INFO codegen.CodeGenerator: Code generated in 13.370647 ms
+2020-11-08 02:59:23,827 INFO codegen.CodeGenerator: Code generated in 7.151496 ms
+2020-11-08 02:59:23,837 INFO codegen.CodeGenerator: Code generated in 8.010713 ms
+2020-11-08 02:59:23,856 INFO codegen.CodeGenerator: Code generated in 16.413023 ms
+2020-11-08 02:59:23,880 INFO codegen.CodeGenerator: Code generated in 18.568168 ms
+2020-11-08 02:59:23,906 INFO codegen.CodeGenerator: Code generated in 9.834074 ms
+2020-11-08 02:59:23,915 INFO codegen.CodeGenerator: Code generated in 7.469288 ms
+2020-11-08 02:59:23,972 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-08 02:59:23,975 INFO driver.cluster: Cluster created with settings {hosts=[c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-08 02:59:23,976 INFO driver.cluster: Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-11-08 02:59:26,465 INFO driver.connection: Opened connection [connectionId{localValue:10, serverValue:50259}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,472 INFO driver.cluster: Monitor thread successfully connected to server with description ServerDescription{address=c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 20]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6555188}
+2020-11-08 02:59:26,473 INFO connection.MongoClientCache: Creating MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 02:59:26,543 INFO driver.connection: Opened connection [connectionId{localValue:11, serverValue:50260}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,618 INFO scheduler.DAGScheduler: Registering RDD 28 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 1
+2020-11-08 02:59:26,625 INFO scheduler.DAGScheduler: Registering RDD 35 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 2
+2020-11-08 02:59:26,628 INFO scheduler.DAGScheduler: Registering RDD 62 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 3
+2020-11-08 02:59:26,629 INFO scheduler.DAGScheduler: Got job 2 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-08 02:59:26,629 INFO scheduler.DAGScheduler: Final stage: ResultStage 6 (count at NativeMethodAccessorImpl.java:0)
+2020-11-08 02:59:26,629 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 5)
+2020-11-08 02:59:26,629 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 5)
+2020-11-08 02:59:26,632 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[28] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 02:59:26,635 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 18.5 KiB, free 22.2 GiB)
+2020-11-08 02:59:26,638 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 8.8 KiB, free 22.2 GiB)
+2020-11-08 02:59:26,638 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 8.8 KiB, free: 22.2 GiB)
+2020-11-08 02:59:26,639 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1200
+2020-11-08 02:59:26,639 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[28] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 02:59:26,639 INFO scheduler.TaskSchedulerImpl: Adding task set 3.0 with 8 tasks
+2020-11-08 02:59:26,640 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[35] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 02:59:26,641 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 10, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7515 bytes)
+2020-11-08 02:59:26,641 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 11, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 1, ANY, 7525 bytes)
+2020-11-08 02:59:26,642 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 3.0 (TID 12, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 2, ANY, 7525 bytes)
+2020-11-08 02:59:26,642 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 3.0 (TID 13, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 3, ANY, 7525 bytes)
+2020-11-08 02:59:26,642 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 3.0 (TID 14, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 4, ANY, 7525 bytes)
+2020-11-08 02:59:26,643 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 3.0 (TID 15, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 5, ANY, 7525 bytes)
+2020-11-08 02:59:26,644 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 3.0 (TID 16, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 6, ANY, 7525 bytes)
+2020-11-08 02:59:26,644 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 3.0 (TID 17, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 7, ANY, 7516 bytes)
+2020-11-08 02:59:26,649 INFO executor.Executor: Running task 0.0 in stage 3.0 (TID 10)
+2020-11-08 02:59:26,649 INFO executor.Executor: Running task 1.0 in stage 3.0 (TID 11)
+2020-11-08 02:59:26,650 INFO executor.Executor: Running task 2.0 in stage 3.0 (TID 12)
+2020-11-08 02:59:26,651 INFO executor.Executor: Running task 3.0 in stage 3.0 (TID 13)
+2020-11-08 02:59:26,651 INFO executor.Executor: Running task 4.0 in stage 3.0 (TID 14)
+2020-11-08 02:59:26,653 INFO executor.Executor: Running task 5.0 in stage 3.0 (TID 15)
+2020-11-08 02:59:26,654 INFO executor.Executor: Running task 6.0 in stage 3.0 (TID 16)
+2020-11-08 02:59:26,654 INFO executor.Executor: Running task 7.0 in stage 3.0 (TID 17)
+2020-11-08 02:59:26,654 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 47.0 KiB, free 22.2 GiB)
+2020-11-08 02:59:26,656 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 17.5 KiB, free 22.2 GiB)
+2020-11-08 02:59:26,657 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 17.5 KiB, free: 22.2 GiB)
+2020-11-08 02:59:26,657 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1200
+2020-11-08 02:59:26,658 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[35] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 02:59:26,658 INFO scheduler.TaskSchedulerImpl: Adding task set 4.0 with 8 tasks
+2020-11-08 02:59:26,694 INFO codegen.CodeGenerator: Code generated in 14.811854 ms
+2020-11-08 02:59:26,703 INFO driver.connection: Opened connection [connectionId{localValue:17, serverValue:50266}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,703 INFO driver.connection: Opened connection [connectionId{localValue:12, serverValue:50261}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,703 INFO driver.connection: Opened connection [connectionId{localValue:13, serverValue:50262}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,704 INFO driver.connection: Opened connection [connectionId{localValue:14, serverValue:50263}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,705 INFO driver.connection: Opened connection [connectionId{localValue:15, serverValue:50264}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,705 INFO driver.connection: Opened connection [connectionId{localValue:16, serverValue:50265}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,705 INFO driver.connection: Opened connection [connectionId{localValue:18, serverValue:50267}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 02:59:26,728 INFO executor.Executor: Finished task 7.0 in stage 3.0 (TID 17). 1701 bytes result sent to driver
+2020-11-08 02:59:26,737 WARN scheduler.TaskSetManager: Stage 4 contains a task of very large size (3448 KiB). The maximum recommended task size is 1000 KiB.
+2020-11-08 02:59:26,737 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 18, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 3531632 bytes)
+2020-11-08 02:59:26,738 INFO executor.Executor: Running task 0.0 in stage 4.0 (TID 18)
+2020-11-08 02:59:26,738 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 3.0 (TID 17) in 94 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 02:59:26,752 INFO executor.Executor: Finished task 0.0 in stage 3.0 (TID 10). 1701 bytes result sent to driver
+2020-11-08 02:59:26,760 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 19, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 1, PROCESS_LOCAL, 4701866 bytes)
+2020-11-08 02:59:26,760 INFO executor.Executor: Running task 1.0 in stage 4.0 (TID 19)
+2020-11-08 02:59:26,761 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 10) in 120 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 02:59:26,777 INFO executor.Executor: Finished task 2.0 in stage 3.0 (TID 12). 1701 bytes result sent to driver
+2020-11-08 02:59:26,786 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 4.0 (TID 20, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 2, PROCESS_LOCAL, 4706663 bytes)
+2020-11-08 02:59:26,787 INFO executor.Executor: Running task 2.0 in stage 4.0 (TID 20)
+2020-11-08 02:59:26,787 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 3.0 (TID 12) in 146 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 02:59:26,857 INFO executor.Executor: Finished task 1.0 in stage 3.0 (TID 11). 1701 bytes result sent to driver
+2020-11-08 02:59:26,864 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 4.0 (TID 21, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 3, PROCESS_LOCAL, 4711664 bytes)
+2020-11-08 02:59:26,865 INFO executor.Executor: Running task 3.0 in stage 4.0 (TID 21)
+2020-11-08 02:59:26,865 INFO executor.Executor: Finished task 3.0 in stage 3.0 (TID 13). 1701 bytes result sent to driver
+2020-11-08 02:59:26,865 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 11) in 224 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 02:59:26,870 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 4.0 (TID 22, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 4, PROCESS_LOCAL, 3537542 bytes)
+2020-11-08 02:59:26,870 INFO executor.Executor: Running task 4.0 in stage 4.0 (TID 22)
+2020-11-08 02:59:26,870 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 3.0 (TID 13) in 228 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 02:59:26,908 INFO executor.Executor: Finished task 5.0 in stage 3.0 (TID 15). 1701 bytes result sent to driver
+2020-11-08 02:59:26,923 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 4.0 (TID 23, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 5, PROCESS_LOCAL, 4716085 bytes)
+2020-11-08 02:59:26,923 INFO executor.Executor: Running task 5.0 in stage 4.0 (TID 23)
+2020-11-08 02:59:26,923 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 3.0 (TID 15) in 281 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 02:59:26,930 INFO codegen.CodeGenerator: Code generated in 84.329052 ms
+2020-11-08 02:59:27,066 INFO executor.Executor: Finished task 4.0 in stage 3.0 (TID 14). 1744 bytes result sent to driver
+2020-11-08 02:59:27,075 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 4.0 (TID 24, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 6, PROCESS_LOCAL, 4714520 bytes)
+2020-11-08 02:59:27,075 INFO executor.Executor: Running task 6.0 in stage 4.0 (TID 24)
+2020-11-08 02:59:27,075 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 3.0 (TID 14) in 433 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 02:59:27,080 INFO executor.Executor: Finished task 6.0 in stage 3.0 (TID 16). 1744 bytes result sent to driver
+2020-11-08 02:59:27,085 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 4.0 (TID 25, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 7, PROCESS_LOCAL, 3883888 bytes)
+2020-11-08 02:59:27,086 INFO executor.Executor: Running task 7.0 in stage 4.0 (TID 25)
+2020-11-08 02:59:27,087 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 3.0 (TID 16) in 443 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 02:59:27,087 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2020-11-08 02:59:27,088 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (count at NativeMethodAccessorImpl.java:0) finished in 0.454 s
+2020-11-08 02:59:27,088 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 02:59:27,088 INFO codegen.CodeGenerator: Code generated in 109.449677 ms
+2020-11-08 02:59:27,088 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 4)
+2020-11-08 02:59:27,088 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 5, ResultStage 6)
+2020-11-08 02:59:27,088 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 02:59:27,992 INFO python.PythonRunner: Times: total = 152, boot = 4, init = 4, finish = 144
+2020-11-08 02:59:28,001 INFO python.PythonRunner: Times: total = 141, boot = 9, init = 4, finish = 128
+2020-11-08 02:59:28,003 INFO executor.Executor: Finished task 4.0 in stage 4.0 (TID 22). 2285 bytes result sent to driver
+2020-11-08 02:59:28,007 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 4.0 (TID 22) in 1141 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 02:59:28,012 INFO executor.Executor: Finished task 0.0 in stage 4.0 (TID 18). 2285 bytes result sent to driver
+2020-11-08 02:59:28,015 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 18) in 1286 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 02:59:28,037 INFO python.PythonRunner: Times: total = 141, boot = 3, init = 5, finish = 133
+2020-11-08 02:59:28,111 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on dlt4n02.nsqdc.city.ac.uk:38607 in memory (size: 8.8 KiB, free: 22.2 GiB)
+2020-11-08 02:59:28,112 INFO executor.Executor: Finished task 7.0 in stage 4.0 (TID 25). 2285 bytes result sent to driver
+2020-11-08 02:59:28,112 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 4.0 (TID 25) in 1031 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 02:59:28,121 INFO python.PythonRunner: Times: total = 298, boot = 3, init = 3, finish = 292
+2020-11-08 02:59:28,126 INFO executor.Executor: Finished task 3.0 in stage 4.0 (TID 21). 2285 bytes result sent to driver
+2020-11-08 02:59:28,127 INFO python.PythonRunner: Times: total = 315, boot = 4, init = 3, finish = 308
+2020-11-08 02:59:28,127 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 4.0 (TID 21) in 1269 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 02:59:28,128 INFO python.PythonRunner: Times: total = 165, boot = 3, init = 3, finish = 159
+2020-11-08 02:59:28,133 INFO executor.Executor: Finished task 2.0 in stage 4.0 (TID 20). 2285 bytes result sent to driver
+2020-11-08 02:59:28,134 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 4.0 (TID 20) in 1356 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 02:59:28,135 INFO python.PythonRunner: Times: total = 355, boot = 5, init = 4, finish = 346
+2020-11-08 02:59:28,135 INFO executor.Executor: Finished task 6.0 in stage 4.0 (TID 24). 2285 bytes result sent to driver
+2020-11-08 02:59:28,136 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 4.0 (TID 24) in 1069 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 02:59:28,142 INFO executor.Executor: Finished task 1.0 in stage 4.0 (TID 19). 2285 bytes result sent to driver
+2020-11-08 02:59:28,143 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 19) in 1390 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 02:59:28,161 INFO python.PythonRunner: Times: total = 180, boot = 5, init = 5, finish = 170
+2020-11-08 02:59:28,167 INFO executor.Executor: Finished task 5.0 in stage 4.0 (TID 23). 2285 bytes result sent to driver
+2020-11-08 02:59:28,168 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 4.0 (TID 23) in 1259 ms on dlt4n02.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 02:59:28,168 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2020-11-08 02:59:28,171 INFO scheduler.DAGScheduler: ShuffleMapStage 4 (count at NativeMethodAccessorImpl.java:0) finished in 1.527 s
+2020-11-08 02:59:28,171 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 02:59:28,171 INFO scheduler.DAGScheduler: running: Set()
+2020-11-08 02:59:28,171 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 5, ResultStage 6)
+2020-11-08 02:59:28,171 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 02:59:28,174 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[62] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 02:59:28,196 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 139.2 KiB, free 22.2 GiB)
+2020-11-08 02:59:28,200 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 46.7 KiB, free 22.2 GiB)
+2020-11-08 02:59:28,200 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on dlt4n02.nsqdc.city.ac.uk:38607 (size: 46.7 KiB, free: 22.2 GiB)
+2020-11-08 02:59:28,201 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1200
+2020-11-08 02:59:28,201 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[62] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-08 02:59:28,201 INFO scheduler.TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+2020-11-08 02:59:28,207 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 5.0 (TID 26, dlt4n02.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7750 bytes)
+2020-11-08 02:59:28,208 INFO executor.Executor: Running task 0.0 in stage 5.0 (TID 26)
+2020-11-08 02:59:28,237 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (513.8 KiB) non-empty blocks including 8 (513.8 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 02:59:28,238 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+2020-11-08 02:59:28,255 INFO codegen.CodeGenerator: Code generated in 9.659337 ms
+2020-11-08 02:59:28,268 INFO codegen.CodeGenerator: Code generated in 4.996286 ms
+2020-11-08 02:59:28,289 INFO codegen.CodeGenerator: Code generated in 5.213232 ms
+2020-11-08 02:59:28,294 INFO codegen.CodeGenerator: Code generated in 3.617121 ms
+2020-11-08 02:59:28,374 INFO codegen.CodeGenerator: Code generated in 4.368438 ms
+2020-11-08 02:59:28,383 INFO codegen.CodeGenerator: Code generated in 3.858033 ms
+2020-11-08 02:59:28,388 INFO codegen.CodeGenerator: Code generated in 3.625829 ms
+2020-11-08 02:59:28,396 INFO codegen.CodeGenerator: Code generated in 4.273632 ms
+2020-11-08 02:59:28,402 INFO codegen.CodeGenerator: Code generated in 4.24893 ms
+2020-11-08 02:59:28,404 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (39.0 MiB) non-empty blocks including 8 (39.0 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 02:59:28,404 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 02:59:28,425 INFO codegen.CodeGenerator: Code generated in 11.326038 ms
+2020-11-08 02:59:28,577 INFO codegen.CodeGenerator: Code generated in 5.838355 ms
+2020-11-08 02:59:28,584 INFO codegen.CodeGenerator: Code generated in 5.541952 ms
+2020-11-08 02:59:28,591 INFO codegen.CodeGenerator: Code generated in 3.864064 ms
+2020-11-08 02:59:28,607 INFO execution.ExternalAppendOnlyUnsafeRowArray: Reached spill threshold of 4096 rows, switching to org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter
+2020-11-08 02:59:28,752 INFO codegen.CodeGenerator: Code generated in 5.135517 ms
+2020-11-08 02:59:28,761 INFO execution.ExternalAppendOnlyUnsafeRowArray: Reached spill threshold of 4096 rows, switching to org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter
+2020-11-08 02:59:28,776 INFO codegen.CodeGenerator: Code generated in 19.714115 ms
+2020-11-08 02:59:30,660 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on dlt4n02.nsqdc.city.ac.uk:38607 in memory (size: 17.5 KiB, free: 22.2 GiB)
+2020-11-08 02:59:31,430 INFO execution.ExternalAppendOnlyUnsafeRowArray: Reached spill threshold of 4096 rows, switching to org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter
+2020-11-08 02:59:32,176 INFO connection.MongoClientCache: Closing MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 02:59:32,176 INFO driver.connection: Closed connection [connectionId{localValue:12, serverValue:50261}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,177 INFO driver.connection: Closed connection [connectionId{localValue:14, serverValue:50263}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,178 INFO driver.connection: Closed connection [connectionId{localValue:11, serverValue:50260}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,178 INFO driver.connection: Closed connection [connectionId{localValue:15, serverValue:50264}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,178 INFO driver.connection: Closed connection [connectionId{localValue:17, serverValue:50266}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,179 INFO driver.connection: Closed connection [connectionId{localValue:18, serverValue:50267}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,179 INFO driver.connection: Closed connection [connectionId{localValue:16, serverValue:50265}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:32,180 INFO driver.connection: Closed connection [connectionId{localValue:13, serverValue:50262}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 02:59:46,500 INFO python.PythonUDFRunner: Times: total = 17730, boot = -1706, init = 1827, finish = 17609
+2020-11-08 02:59:46,505 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (513.8 KiB) non-empty blocks including 8 (513.8 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 02:59:46,506 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+2020-11-08 02:59:46,551 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (39.0 MiB) non-empty blocks including 8 (39.0 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 02:59:46,551 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 02:59:46,712 INFO execution.ExternalAppendOnlyUnsafeRowArray: Reached spill threshold of 4096 rows, switching to org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter
+2020-11-08 02:59:46,817 INFO execution.ExternalAppendOnlyUnsafeRowArray: Reached spill threshold of 4096 rows, switching to org.apache.spark.util.collection.unsafe.sort.UnsafeExternalSorter
+2020-11-08 02:59:46,849 INFO codegen.CodeGenerator: Code generated in 17.420641 ms
+2020-11-08 02:59:46,863 INFO codegen.CodeGenerator: Code generated in 8.565573 ms
+2020-11-08 02:59:46,890 INFO codegen.CodeGenerator: Code generated in 10.577276 ms
+2020-11-08 02:59:46,902 INFO codegen.CodeGenerator: Code generated in 7.181105 ms
+slurmstepd: *** JOB 22224 ON dlt4n02 CANCELLED AT 2020-11-09T02:56:26 DUE TO TIME LIMIT ***
+2020-11-09 02:56:26,200 ERROR executor.Executor: Exception in task 0.0 in stage 5.0 (TID 26)
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.spark.sql.execution.python.PythonUDFRunner$$anon$2.read(PythonUDFRunner.scala:74)
+	at org.apache.spark.sql.execution.python.PythonUDFRunner$$anon$2.read(PythonUDFRunner.scala:64)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:456)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:489)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage16.agg_doAggregateWithoutKey_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage16.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:132)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:444)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:447)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-09 02:56:26,204 INFO executor.Executor: Not reporting error to driver during JVM shutdown.
+2020-11-09 02:56:26,210 INFO spark.SparkContext: Invoking stop() from shutdown hook
+2020-11-09 02:56:26,223 INFO server.AbstractConnector: Stopped Spark@295d367{HTTP/1.1,[http/1.1]}{0.0.0.0:4047}
+2020-11-09 02:56:26,225 INFO ui.SparkUI: Stopped Spark web UI at http://dlt4n02.nsqdc.city.ac.uk:4047
+2020-11-09 02:56:26,228 INFO scheduler.DAGScheduler: ShuffleMapStage 5 (count at NativeMethodAccessorImpl.java:0) failed in 86218.049 s due to Stage cancelled because SparkContext was shut down
+2020-11-09 02:56:26,229 INFO scheduler.DAGScheduler: Job 2 failed: count at NativeMethodAccessorImpl.java:0, took 86222.256984 s
+2020-11-09 02:56:26,239 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2020-11-09 02:56:26,262 INFO memory.MemoryStore: MemoryStore cleared
+2020-11-09 02:56:26,262 INFO storage.BlockManager: BlockManager stopped
+2020-11-09 02:56:26,265 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2020-11-09 02:56:26,268 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2020-11-09 02:56:26,275 INFO spark.SparkContext: Successfully stopped SparkContext
+2020-11-09 02:56:26,275 INFO util.ShutdownHookManager: Shutdown hook called
+2020-11-09 02:56:26,275 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418
+2020-11-09 02:56:26,279 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-603ff031-68d0-429d-b94e-de64d1e28418/pyspark-525391a6-17cf-45c9-9068-dde761ea2d75
+2020-11-09 02:56:26,283 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-1cc06c21-fdb7-49a0-bf9e-700cc9a2dd00

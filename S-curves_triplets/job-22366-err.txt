@@ -1,0 +1,1141 @@
+cuda version 10.0 is not available on this node 
+2020-11-08 23:51:32,497 WARN util.Utils: Your hostname, fairlight resolves to a loopback address: 127.0.1.1; using 10.207.1.110 instead (on interface eno1)
+2020-11-08 23:51:32,498 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Ivy Default Cache set to: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/cache
+The jars for the packages stored in: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars
+:: loading settings :: url = jar:file:/vol/opt/spark/3.0.0-bin-without-hadoop/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.mongodb.spark#mongo-spark-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-396ee806-b63d-4481-a98c-b457158b784f;1.0
+	confs: [default]
+	found org.mongodb.spark#mongo-spark-connector_2.12;2.4.2 in spark-list
+	found org.mongodb#mongo-java-driver;3.12.5 in spark-list
+:: resolution report :: resolve 174ms :: artifacts dl 4ms
+	:: modules in use:
+	org.mongodb#mongo-java-driver;3.12.5 from spark-list in [default]
+	org.mongodb.spark#mongo-spark-connector_2.12;2.4.2 from spark-list in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   2   |   0   |   0   |   0   ||   2   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-396ee806-b63d-4481-a98c-b457158b784f
+	confs: [default]
+	0 artifacts copied, 2 already retrieved (0kB/7ms)
+2020-11-08 23:51:35,737 INFO spark.SparkContext: Running Spark version 3.0.0
+2020-11-08 23:51:35,777 INFO resource.ResourceUtils: ==============================================================
+2020-11-08 23:51:35,778 INFO resource.ResourceUtils: Resources for spark.driver:
+
+2020-11-08 23:51:35,778 INFO resource.ResourceUtils: ==============================================================
+2020-11-08 23:51:35,779 INFO spark.SparkContext: Submitted application: DLSH.py
+2020-11-08 23:51:35,861 INFO spark.SecurityManager: Changing view acls to: aczx101
+2020-11-08 23:51:35,861 INFO spark.SecurityManager: Changing modify acls to: aczx101
+2020-11-08 23:51:35,862 INFO spark.SecurityManager: Changing view acls groups to: 
+2020-11-08 23:51:35,862 INFO spark.SecurityManager: Changing modify acls groups to: 
+2020-11-08 23:51:35,862 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(aczx101); groups with view permissions: Set(); users  with modify permissions: Set(aczx101); groups with modify permissions: Set()
+2020-11-08 23:51:36,134 INFO util.Utils: Successfully started service 'sparkDriver' on port 42039.
+2020-11-08 23:51:36,162 INFO spark.SparkEnv: Registering MapOutputTracker
+2020-11-08 23:51:36,194 INFO spark.SparkEnv: Registering BlockManagerMaster
+2020-11-08 23:51:36,213 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2020-11-08 23:51:36,213 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2020-11-08 23:51:36,217 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2020-11-08 23:51:36,230 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-ccc21877-cfb5-4c71-9721-c8428511fedf
+2020-11-08 23:51:36,252 INFO memory.MemoryStore: MemoryStore started with capacity 22.2 GiB
+2020-11-08 23:51:36,269 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2020-11-08 23:51:36,372 INFO util.log: Logging initialized @5066ms to org.sparkproject.jetty.util.log.Slf4jLog
+2020-11-08 23:51:36,533 INFO server.Server: jetty-9.4.z-SNAPSHOT; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_265-8u265-b01-0ubuntu2~16.04-b01
+2020-11-08 23:51:36,561 INFO server.Server: Started @5257ms
+2020-11-08 23:51:36,593 WARN util.Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2020-11-08 23:51:36,593 WARN util.Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+2020-11-08 23:51:36,639 INFO server.AbstractConnector: Started ServerConnector@5f52bd35{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+2020-11-08 23:51:36,639 INFO util.Utils: Successfully started service 'SparkUI' on port 4042.
+2020-11-08 23:51:36,670 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7e78ca55{/jobs,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,672 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4f64a6b1{/jobs/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,673 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4610eeaf{/jobs/job,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,676 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7d2a6084{/jobs/job/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,678 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4c0d5590{/stages,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,678 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2aeae900{/stages/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,679 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@78db67d7{/stages/stage,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,681 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@48625a6d{/stages/stage/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,682 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4fcd3223{/stages/pool,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,682 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d221188{/stages/pool/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,683 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@449bed84{/storage,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,684 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@42eb2163{/storage/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,685 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@37b65622{/storage/rdd,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,685 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6576f303{/storage/rdd/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,686 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1f9e5183{/environment,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,687 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5a9412e0{/environment/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,687 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4d90e4f2{/executors,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,688 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7fb91ae9{/executors/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,689 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@68af7774{/executors/threadDump,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,690 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5aeec5cc{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,699 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7e89b7cb{/static,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,700 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@182df98d{/,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,701 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@9beb502{/api,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,702 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4dcceabb{/jobs/job/kill,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,703 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@32a4cf76{/stages/stage/kill,null,AVAILABLE,@Spark}
+2020-11-08 23:51:36,705 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://fairlight.nsqdc.city.ac.uk:4042
+2020-11-08 23:51:36,750 INFO spark.SparkContext: Added JAR file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar at spark://fairlight.nsqdc.city.ac.uk:42039/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604879496750
+2020-11-08 23:51:36,751 INFO spark.SparkContext: Added JAR file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar at spark://fairlight.nsqdc.city.ac.uk:42039/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604879496751
+2020-11-08 23:51:36,752 INFO spark.SparkContext: Added file file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar at file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604879496752
+2020-11-08 23:51:36,754 INFO util.Utils: Copying /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar
+2020-11-08 23:51:36,767 INFO spark.SparkContext: Added file file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar at file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604879496767
+2020-11-08 23:51:36,767 INFO util.Utils: Copying /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb_mongo-java-driver-3.12.5.jar
+2020-11-08 23:51:36,948 INFO executor.Executor: Starting executor ID driver on host fairlight.nsqdc.city.ac.uk
+2020-11-08 23:51:36,973 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37809.
+2020-11-08 23:51:36,974 INFO netty.NettyBlockTransferService: Server created on fairlight.nsqdc.city.ac.uk:37809
+2020-11-08 23:51:36,975 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2020-11-08 23:51:36,982 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, fairlight.nsqdc.city.ac.uk, 37809, None)
+2020-11-08 23:51:36,989 INFO storage.BlockManagerMasterEndpoint: Registering block manager fairlight.nsqdc.city.ac.uk:37809 with 22.2 GiB RAM, BlockManagerId(driver, fairlight.nsqdc.city.ac.uk, 37809, None)
+2020-11-08 23:51:36,993 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, fairlight.nsqdc.city.ac.uk, 37809, None)
+2020-11-08 23:51:36,995 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, fairlight.nsqdc.city.ac.uk, 37809, None)
+2020-11-08 23:51:37,162 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@48e84123{/metrics/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:37,400 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/enterprise.internal.city.ac.uk/aczx101/spark-warehouse').
+2020-11-08 23:51:37,400 INFO internal.SharedState: Warehouse path is 'file:/home/enterprise.internal.city.ac.uk/aczx101/spark-warehouse'.
+2020-11-08 23:51:37,415 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@755dff1f{/SQL,null,AVAILABLE,@Spark}
+2020-11-08 23:51:37,416 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@46cc9425{/SQL/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:37,417 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@ade45c3{/SQL/execution,null,AVAILABLE,@Spark}
+2020-11-08 23:51:37,417 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7dc374cb{/SQL/execution/json,null,AVAILABLE,@Spark}
+2020-11-08 23:51:37,419 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@28652462{/static/sql,null,AVAILABLE,@Spark}
+2020-11-08 23:51:38,532 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 368.0 B, free 22.2 GiB)
+2020-11-08 23:51:38,580 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 444.0 B, free 22.2 GiB)
+2020-11-08 23:51:38,583 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 444.0 B, free: 22.2 GiB)
+2020-11-08 23:51:38,588 INFO spark.SparkContext: Created broadcast 0 from broadcast at MongoSpark.scala:542
+2020-11-08 23:51:38,777 INFO driver.cluster: Cluster created with settings {hosts=[c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-08 23:51:38,861 INFO driver.cluster: Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-11-08 23:51:38,986 INFO driver.connection: Opened connection [connectionId{localValue:1, serverValue:51678}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:39,003 INFO driver.cluster: Monitor thread successfully connected to server with description ServerDescription{address=c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 20]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13697680}
+2020-11-08 23:51:39,007 INFO connection.MongoClientCache: Creating MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 23:51:39,202 INFO driver.connection: Opened connection [connectionId{localValue:2, serverValue:51679}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:39,652 INFO spark.SparkContext: Starting job: treeAggregate at MongoInferSchema.scala:88
+2020-11-08 23:51:39,668 INFO scheduler.DAGScheduler: Got job 0 (treeAggregate at MongoInferSchema.scala:88) with 1 output partitions
+2020-11-08 23:51:39,669 INFO scheduler.DAGScheduler: Final stage: ResultStage 0 (treeAggregate at MongoInferSchema.scala:88)
+2020-11-08 23:51:39,669 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2020-11-08 23:51:39,670 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-08 23:51:39,676 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[4] at treeAggregate at MongoInferSchema.scala:88), which has no missing parents
+2020-11-08 23:51:39,707 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 7.3 KiB, free 22.2 GiB)
+2020-11-08 23:51:39,710 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.6 KiB, free 22.2 GiB)
+2020-11-08 23:51:39,711 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 3.6 KiB, free: 22.2 GiB)
+2020-11-08 23:51:39,712 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:51:39,729 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[4] at treeAggregate at MongoInferSchema.scala:88) (first 15 tasks are for partitions Vector(0))
+2020-11-08 23:51:39,731 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+2020-11-08 23:51:39,807 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7507 bytes)
+2020-11-08 23:51:39,821 INFO executor.Executor: Running task 0.0 in stage 0.0 (TID 0)
+2020-11-08 23:51:39,827 INFO executor.Executor: Fetching file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604879496767
+2020-11-08 23:51:39,858 INFO util.Utils: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb_mongo-java-driver-3.12.5.jar has been previously copied to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb_mongo-java-driver-3.12.5.jar
+2020-11-08 23:51:39,863 INFO executor.Executor: Fetching file:///home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604879496752
+2020-11-08 23:51:39,864 INFO util.Utils: /home/enterprise.internal.city.ac.uk/aczx101/.ivy2/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar has been previously copied to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar
+2020-11-08 23:51:39,870 INFO executor.Executor: Fetching spark://fairlight.nsqdc.city.ac.uk:42039/jars/org.mongodb_mongo-java-driver-3.12.5.jar with timestamp 1604879496751
+2020-11-08 23:51:39,925 INFO client.TransportClientFactory: Successfully created connection to fairlight.nsqdc.city.ac.uk/10.207.1.110:42039 after 42 ms (0 ms spent in bootstraps)
+2020-11-08 23:51:39,939 INFO util.Utils: Fetching spark://fairlight.nsqdc.city.ac.uk:42039/jars/org.mongodb_mongo-java-driver-3.12.5.jar to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/fetchFileTemp7846758646744240648.tmp
+2020-11-08 23:51:39,980 INFO util.Utils: /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/fetchFileTemp7846758646744240648.tmp has been previously copied to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb_mongo-java-driver-3.12.5.jar
+2020-11-08 23:51:39,986 INFO executor.Executor: Adding file:/tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb_mongo-java-driver-3.12.5.jar to class loader
+2020-11-08 23:51:39,986 INFO executor.Executor: Fetching spark://fairlight.nsqdc.city.ac.uk:42039/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar with timestamp 1604879496750
+2020-11-08 23:51:39,987 INFO util.Utils: Fetching spark://fairlight.nsqdc.city.ac.uk:42039/jars/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/fetchFileTemp5656711990900592104.tmp
+2020-11-08 23:51:39,991 INFO util.Utils: /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/fetchFileTemp5656711990900592104.tmp has been previously copied to /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar
+2020-11-08 23:51:39,996 INFO executor.Executor: Adding file:/tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/userFiles-7fb13be0-228e-4502-b32d-ba9ab95f86ac/org.mongodb.spark_mongo-spark-connector_2.12-2.4.2.jar to class loader
+2020-11-08 23:51:41,860 INFO executor.Executor: Finished task 0.0 in stage 0.0 (TID 0). 3594 bytes result sent to driver
+2020-11-08 23:51:41,877 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2096 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-08 23:51:41,880 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2020-11-08 23:51:41,886 INFO scheduler.DAGScheduler: ResultStage 0 (treeAggregate at MongoInferSchema.scala:88) finished in 2.193 s
+2020-11-08 23:51:41,891 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-08 23:51:41,891 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+2020-11-08 23:51:41,893 INFO scheduler.DAGScheduler: Job 0 finished: treeAggregate at MongoInferSchema.scala:88, took 2.240895 s
+2020-11-08 23:51:43,386 WARN util.package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2020-11-08 23:51:44,988 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 3.6 KiB, free: 22.2 GiB)
+2020-11-08 23:51:45,711 INFO sql.MongoRelation: requiredColumns: _id, chordRatio, filters: 
+2020-11-08 23:51:46,437 INFO codegen.CodeGenerator: Generated method too long to be JIT compiled: org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext is 8496 bytes
+2020-11-08 23:51:46,439 INFO codegen.CodeGenerator: Code generated in 407.995203 ms
+2020-11-08 23:51:46,500 INFO codegen.CodeGenerator: Code generated in 44.461685 ms
+2020-11-08 23:51:46,564 INFO codegen.CodeGenerator: Code generated in 50.046949 ms
+2020-11-08 23:51:46,665 INFO spark.SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+2020-11-08 23:51:46,854 INFO scheduler.DAGScheduler: Registering RDD 9 (showString at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+2020-11-08 23:51:46,857 INFO scheduler.DAGScheduler: Got job 1 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-08 23:51:46,857 INFO scheduler.DAGScheduler: Final stage: ResultStage 2 (showString at NativeMethodAccessorImpl.java:0)
+2020-11-08 23:51:46,857 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+2020-11-08 23:51:46,859 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+2020-11-08 23:51:46,860 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 23:51:46,877 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 102.1 KiB, free 22.2 GiB)
+2020-11-08 23:51:46,881 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 18.7 KiB, free 22.2 GiB)
+2020-11-08 23:51:46,882 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 18.7 KiB, free: 22.2 GiB)
+2020-11-08 23:51:46,883 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:51:46,886 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 23:51:46,886 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 8 tasks
+2020-11-08 23:51:46,890 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7515 bytes)
+2020-11-08 23:51:46,891 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2, fairlight.nsqdc.city.ac.uk, executor driver, partition 1, ANY, 7525 bytes)
+2020-11-08 23:51:46,891 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3, fairlight.nsqdc.city.ac.uk, executor driver, partition 2, ANY, 7525 bytes)
+2020-11-08 23:51:46,891 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4, fairlight.nsqdc.city.ac.uk, executor driver, partition 3, ANY, 7525 bytes)
+2020-11-08 23:51:46,892 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5, fairlight.nsqdc.city.ac.uk, executor driver, partition 4, ANY, 7525 bytes)
+2020-11-08 23:51:46,893 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6, fairlight.nsqdc.city.ac.uk, executor driver, partition 5, ANY, 7525 bytes)
+2020-11-08 23:51:46,893 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7, fairlight.nsqdc.city.ac.uk, executor driver, partition 6, ANY, 7525 bytes)
+2020-11-08 23:51:46,893 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8, fairlight.nsqdc.city.ac.uk, executor driver, partition 7, ANY, 7516 bytes)
+2020-11-08 23:51:46,894 INFO executor.Executor: Running task 0.0 in stage 1.0 (TID 1)
+2020-11-08 23:51:46,895 INFO executor.Executor: Running task 2.0 in stage 1.0 (TID 3)
+2020-11-08 23:51:46,896 INFO executor.Executor: Running task 1.0 in stage 1.0 (TID 2)
+2020-11-08 23:51:46,897 INFO executor.Executor: Running task 3.0 in stage 1.0 (TID 4)
+2020-11-08 23:51:46,897 INFO executor.Executor: Running task 4.0 in stage 1.0 (TID 5)
+2020-11-08 23:51:46,898 INFO executor.Executor: Running task 5.0 in stage 1.0 (TID 6)
+2020-11-08 23:51:46,899 INFO executor.Executor: Running task 6.0 in stage 1.0 (TID 7)
+2020-11-08 23:51:46,899 INFO executor.Executor: Running task 7.0 in stage 1.0 (TID 8)
+2020-11-08 23:51:47,246 INFO driver.connection: Opened connection [connectionId{localValue:6, serverValue:51697}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,246 INFO driver.connection: Opened connection [connectionId{localValue:9, serverValue:51691}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,247 INFO driver.connection: Opened connection [connectionId{localValue:4, serverValue:51693}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,247 INFO driver.connection: Opened connection [connectionId{localValue:5, serverValue:51696}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,247 INFO driver.connection: Opened connection [connectionId{localValue:7, serverValue:51692}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,247 INFO driver.connection: Opened connection [connectionId{localValue:8, serverValue:51695}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,247 INFO driver.connection: Opened connection [connectionId{localValue:3, serverValue:51694}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:51:47,480 INFO codegen.CodeGenerator: Code generated in 261.430812 ms
+2020-11-08 23:51:48,062 INFO executor.Executor: Finished task 7.0 in stage 1.0 (TID 8). 1789 bytes result sent to driver
+2020-11-08 23:51:48,066 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 1173 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 23:51:48,382 INFO executor.Executor: Finished task 0.0 in stage 1.0 (TID 1). 1746 bytes result sent to driver
+2020-11-08 23:51:48,384 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1496 ms on fairlight.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 23:51:48,615 INFO executor.Executor: Finished task 2.0 in stage 1.0 (TID 3). 1746 bytes result sent to driver
+2020-11-08 23:51:48,616 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 1725 ms on fairlight.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 23:51:48,817 INFO executor.Executor: Finished task 4.0 in stage 1.0 (TID 5). 1746 bytes result sent to driver
+2020-11-08 23:51:48,819 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 1928 ms on fairlight.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 23:51:49,161 INFO executor.Executor: Finished task 6.0 in stage 1.0 (TID 7). 1746 bytes result sent to driver
+2020-11-08 23:51:49,163 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 2270 ms on fairlight.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 23:51:49,238 INFO executor.Executor: Finished task 1.0 in stage 1.0 (TID 2). 1746 bytes result sent to driver
+2020-11-08 23:51:49,239 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 2349 ms on fairlight.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 23:51:49,274 INFO executor.Executor: Finished task 5.0 in stage 1.0 (TID 6). 1746 bytes result sent to driver
+2020-11-08 23:51:49,275 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 2383 ms on fairlight.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 23:51:49,372 INFO executor.Executor: Finished task 3.0 in stage 1.0 (TID 4). 1746 bytes result sent to driver
+2020-11-08 23:51:49,373 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 2482 ms on fairlight.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 23:51:49,373 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2020-11-08 23:51:49,374 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 2.507 s
+2020-11-08 23:51:49,375 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 23:51:49,376 INFO scheduler.DAGScheduler: running: Set()
+2020-11-08 23:51:49,377 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 2)
+2020-11-08 23:51:49,377 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 23:51:49,384 INFO scheduler.DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[15] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 23:51:49,399 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 172.1 KiB, free 22.2 GiB)
+2020-11-08 23:51:49,401 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 37.6 KiB, free 22.2 GiB)
+2020-11-08 23:51:49,402 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 37.6 KiB, free: 22.2 GiB)
+2020-11-08 23:51:49,403 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:51:49,404 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[15] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-08 23:51:49,404 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+2020-11-08 23:51:49,408 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 9, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-08 23:51:49,409 INFO executor.Executor: Running task 0.0 in stage 2.0 (TID 9)
+2020-11-08 23:51:49,454 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (1213.0 KiB) non-empty blocks including 8 (1213.0 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:51:49,455 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 7 ms
+2020-11-08 23:51:49,588 INFO codegen.CodeGenerator: Code generated in 75.965317 ms
+2020-11-08 23:51:50,739 INFO codegen.CodeGenerator: Code generated in 27.210388 ms
+2020-11-08 23:51:51,235 INFO executor.Executor: Finished task 0.0 in stage 2.0 (TID 9). 3925 bytes result sent to driver
+2020-11-08 23:51:51,237 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 9) in 1832 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-08 23:51:51,238 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2020-11-08 23:51:51,239 INFO python.PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 34923
+2020-11-08 23:51:51,241 INFO scheduler.DAGScheduler: ResultStage 2 (showString at NativeMethodAccessorImpl.java:0) finished in 1.851 s
+2020-11-08 23:51:51,242 INFO scheduler.DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-08 23:51:51,242 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+2020-11-08 23:51:51,243 INFO scheduler.DAGScheduler: Job 1 finished: showString at NativeMethodAccessorImpl.java:0, took 4.577083 s
+2020-11-08 23:51:51,270 INFO codegen.CodeGenerator: Code generated in 12.171408 ms
+2020-11-08 23:51:51,529 INFO sql.MongoRelation: requiredColumns: chordRatio, filters: 
+2020-11-08 23:51:51,573 INFO codegen.CodeGenerator: Code generated in 7.230907 ms
+2020-11-08 23:51:51,589 INFO codegen.CodeGenerator: Code generated in 12.301896 ms
+2020-11-08 23:51:51,615 INFO codegen.CodeGenerator: Code generated in 20.422774 ms
+2020-11-08 23:51:51,641 INFO spark.SparkContext: Starting job: collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134
+2020-11-08 23:51:51,697 INFO scheduler.DAGScheduler: Registering RDD 20 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134) as input to shuffle 1
+2020-11-08 23:51:51,698 INFO scheduler.DAGScheduler: Got job 2 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134) with 1 output partitions
+2020-11-08 23:51:51,698 INFO scheduler.DAGScheduler: Final stage: ResultStage 4 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134)
+2020-11-08 23:51:51,698 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+2020-11-08 23:51:51,698 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+2020-11-08 23:51:51,700 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[20] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134), which has no missing parents
+2020-11-08 23:51:51,707 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 101.1 KiB, free 22.2 GiB)
+2020-11-08 23:51:51,710 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 18.5 KiB, free 22.2 GiB)
+2020-11-08 23:51:51,711 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 18.5 KiB, free: 22.2 GiB)
+2020-11-08 23:51:51,712 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:51:51,712 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[20] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 23:51:51,712 INFO scheduler.TaskSchedulerImpl: Adding task set 3.0 with 8 tasks
+2020-11-08 23:51:51,714 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 10, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7515 bytes)
+2020-11-08 23:51:51,715 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 11, fairlight.nsqdc.city.ac.uk, executor driver, partition 1, ANY, 7525 bytes)
+2020-11-08 23:51:51,715 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 3.0 (TID 12, fairlight.nsqdc.city.ac.uk, executor driver, partition 2, ANY, 7525 bytes)
+2020-11-08 23:51:51,716 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 3.0 (TID 13, fairlight.nsqdc.city.ac.uk, executor driver, partition 3, ANY, 7525 bytes)
+2020-11-08 23:51:51,716 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 3.0 (TID 14, fairlight.nsqdc.city.ac.uk, executor driver, partition 4, ANY, 7525 bytes)
+2020-11-08 23:51:51,716 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 3.0 (TID 15, fairlight.nsqdc.city.ac.uk, executor driver, partition 5, ANY, 7525 bytes)
+2020-11-08 23:51:51,717 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 3.0 (TID 16, fairlight.nsqdc.city.ac.uk, executor driver, partition 6, ANY, 7525 bytes)
+2020-11-08 23:51:51,718 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 3.0 (TID 17, fairlight.nsqdc.city.ac.uk, executor driver, partition 7, ANY, 7516 bytes)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 0.0 in stage 3.0 (TID 10)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 2.0 in stage 3.0 (TID 12)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 7.0 in stage 3.0 (TID 17)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 4.0 in stage 3.0 (TID 14)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 1.0 in stage 3.0 (TID 11)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 3.0 in stage 3.0 (TID 13)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 6.0 in stage 3.0 (TID 16)
+2020-11-08 23:51:51,718 INFO executor.Executor: Running task 5.0 in stage 3.0 (TID 15)
+2020-11-08 23:51:51,910 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 37.6 KiB, free: 22.2 GiB)
+2020-11-08 23:51:51,915 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 18.7 KiB, free: 22.2 GiB)
+2020-11-08 23:51:52,016 INFO codegen.CodeGenerator: Code generated in 186.753301 ms
+2020-11-08 23:51:52,073 INFO executor.Executor: Finished task 0.0 in stage 3.0 (TID 10). 1746 bytes result sent to driver
+2020-11-08 23:51:52,074 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 10) in 360 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 23:51:52,151 INFO executor.Executor: Finished task 7.0 in stage 3.0 (TID 17). 1746 bytes result sent to driver
+2020-11-08 23:51:52,152 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 3.0 (TID 17) in 435 ms on fairlight.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 23:51:52,914 INFO executor.Executor: Finished task 4.0 in stage 3.0 (TID 14). 1746 bytes result sent to driver
+2020-11-08 23:51:52,915 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 3.0 (TID 14) in 1199 ms on fairlight.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 23:51:53,415 INFO executor.Executor: Finished task 2.0 in stage 3.0 (TID 12). 1746 bytes result sent to driver
+2020-11-08 23:51:53,416 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 3.0 (TID 12) in 1701 ms on fairlight.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 23:51:54,184 INFO executor.Executor: Finished task 6.0 in stage 3.0 (TID 16). 1746 bytes result sent to driver
+2020-11-08 23:51:54,186 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 3.0 (TID 16) in 2469 ms on fairlight.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 23:51:54,456 INFO executor.Executor: Finished task 3.0 in stage 3.0 (TID 13). 1746 bytes result sent to driver
+2020-11-08 23:51:54,457 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 3.0 (TID 13) in 2742 ms on fairlight.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 23:51:54,460 INFO executor.Executor: Finished task 5.0 in stage 3.0 (TID 15). 1746 bytes result sent to driver
+2020-11-08 23:51:54,461 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 3.0 (TID 15) in 2745 ms on fairlight.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 23:51:54,556 INFO executor.Executor: Finished task 1.0 in stage 3.0 (TID 11). 1746 bytes result sent to driver
+2020-11-08 23:51:54,558 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 11) in 2844 ms on fairlight.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 23:51:54,558 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2020-11-08 23:51:54,559 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134) finished in 2.857 s
+2020-11-08 23:51:54,559 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 23:51:54,559 INFO scheduler.DAGScheduler: running: Set()
+2020-11-08 23:51:54,559 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+2020-11-08 23:51:54,559 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 23:51:54,559 INFO scheduler.DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[26] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134), which has no missing parents
+2020-11-08 23:51:54,565 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 106.6 KiB, free 22.2 GiB)
+2020-11-08 23:51:54,571 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 22.3 KiB, free 22.2 GiB)
+2020-11-08 23:51:54,571 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 22.3 KiB, free: 22.2 GiB)
+2020-11-08 23:51:54,572 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:51:54,572 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[26] at collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134) (first 15 tasks are for partitions Vector(0))
+2020-11-08 23:51:54,572 INFO scheduler.TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+2020-11-08 23:51:54,574 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 18, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-08 23:51:54,574 INFO executor.Executor: Running task 0.0 in stage 4.0 (TID 18)
+2020-11-08 23:51:54,583 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (1053.5 KiB) non-empty blocks including 8 (1053.5 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:51:54,583 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+2020-11-08 23:51:54,594 INFO codegen.CodeGenerator: Code generated in 6.378328 ms
+2020-11-08 23:51:54,642 INFO codegen.CodeGenerator: Code generated in 26.271934 ms
+2020-11-08 23:51:54,702 INFO python.PythonUDFRunner: Times: total = 74, boot = 6, init = 16, finish = 52
+2020-11-08 23:51:54,705 INFO executor.Executor: Finished task 0.0 in stage 4.0 (TID 18). 66628 bytes result sent to driver
+2020-11-08 23:51:54,706 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 18) in 133 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-08 23:51:54,706 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2020-11-08 23:51:54,708 INFO scheduler.DAGScheduler: ResultStage 4 (collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134) finished in 0.147 s
+2020-11-08 23:51:54,708 INFO scheduler.DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-08 23:51:54,709 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+2020-11-08 23:51:54,709 INFO scheduler.DAGScheduler: Job 2 finished: collect at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:134, took 3.068331 s
+2020-11-08 23:51:59,652 INFO connection.MongoClientCache: Closing MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 23:51:59,657 INFO driver.connection: Closed connection [connectionId{localValue:6, serverValue:51697}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,658 INFO driver.connection: Closed connection [connectionId{localValue:3, serverValue:51694}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,658 INFO driver.connection: Closed connection [connectionId{localValue:4, serverValue:51693}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,658 INFO driver.connection: Closed connection [connectionId{localValue:5, serverValue:51696}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,658 INFO driver.connection: Closed connection [connectionId{localValue:8, serverValue:51695}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,659 INFO driver.connection: Closed connection [connectionId{localValue:9, serverValue:51691}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,659 INFO driver.connection: Closed connection [connectionId{localValue:7, serverValue:51692}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:51:59,659 INFO driver.connection: Closed connection [connectionId{localValue:2, serverValue:51679}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:04,895 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 22.3 KiB, free: 22.2 GiB)
+2020-11-08 23:52:04,900 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 18.5 KiB, free: 22.2 GiB)
+2020-11-08 23:52:07,716 INFO sql.MongoRelation: requiredColumns: _id, chordRatio, filters: 
+2020-11-08 23:52:07,746 INFO sql.MongoRelation: requiredColumns: _id, chordRatio, filters: 
+2020-11-08 23:52:07,774 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 23:52:07,776 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 23:52:07,781 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 23:52:07,782 WARN window.WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2020-11-08 23:52:08,148 INFO codegen.CodeGenerator: Code generated in 9.04867 ms
+2020-11-08 23:52:08,178 INFO codegen.CodeGenerator: Code generated in 14.562277 ms
+2020-11-08 23:52:08,191 INFO codegen.CodeGenerator: Code generated in 7.207717 ms
+2020-11-08 23:52:08,203 INFO codegen.CodeGenerator: Code generated in 8.466904 ms
+2020-11-08 23:52:08,213 INFO codegen.CodeGenerator: Code generated in 6.348211 ms
+2020-11-08 23:52:08,230 INFO codegen.CodeGenerator: Code generated in 12.541088 ms
+2020-11-08 23:52:08,246 INFO codegen.CodeGenerator: Code generated in 10.695173 ms
+2020-11-08 23:52:08,256 INFO codegen.CodeGenerator: Code generated in 6.415448 ms
+2020-11-08 23:52:08,270 INFO codegen.CodeGenerator: Code generated in 10.505331 ms
+2020-11-08 23:52:08,291 INFO codegen.CodeGenerator: Code generated in 16.299323 ms
+2020-11-08 23:52:08,366 INFO codegen.CodeGenerator: Code generated in 11.279572 ms
+2020-11-08 23:52:08,377 INFO codegen.CodeGenerator: Code generated in 8.942886 ms
+2020-11-08 23:52:08,450 INFO codegen.CodeGenerator: Code generated in 7.333275 ms
+2020-11-08 23:52:08,457 INFO codegen.CodeGenerator: Code generated in 5.179216 ms
+2020-11-08 23:52:08,468 INFO codegen.CodeGenerator: Code generated in 9.110061 ms
+2020-11-08 23:52:08,477 INFO codegen.CodeGenerator: Code generated in 7.632215 ms
+2020-11-08 23:52:08,506 INFO codegen.CodeGenerator: Code generated in 10.809863 ms
+2020-11-08 23:52:08,516 INFO codegen.CodeGenerator: Code generated in 9.082956 ms
+2020-11-08 23:52:08,598 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-08 23:52:08,603 INFO driver.cluster: Cluster created with settings {hosts=[c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-08 23:52:08,605 INFO driver.cluster: Cluster description not yet available. Waiting for 30000 ms before timing out
+2020-11-08 23:52:08,732 INFO driver.connection: Opened connection [connectionId{localValue:10, serverValue:51707}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:08,759 INFO driver.cluster: Monitor thread successfully connected to server with description ServerDescription{address=c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 20]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26582342}
+2020-11-08 23:52:08,760 INFO connection.MongoClientCache: Creating MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 23:52:08,905 INFO driver.connection: Opened connection [connectionId{localValue:11, serverValue:51715}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,082 INFO scheduler.DAGScheduler: Registering RDD 39 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 2
+2020-11-08 23:52:09,092 INFO scheduler.DAGScheduler: Registering RDD 52 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 4
+2020-11-08 23:52:09,093 INFO scheduler.DAGScheduler: Registering RDD 45 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 3
+2020-11-08 23:52:09,096 INFO scheduler.DAGScheduler: Registering RDD 83 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 5
+2020-11-08 23:52:09,096 INFO scheduler.DAGScheduler: Got job 3 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-08 23:52:09,096 INFO scheduler.DAGScheduler: Final stage: ResultStage 9 (count at NativeMethodAccessorImpl.java:0)
+2020-11-08 23:52:09,096 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+2020-11-08 23:52:09,096 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 8)
+2020-11-08 23:52:09,102 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[52] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 23:52:09,107 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 63.8 KiB, free 22.2 GiB)
+2020-11-08 23:52:09,109 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 22.7 KiB, free 22.2 GiB)
+2020-11-08 23:52:09,110 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 22.7 KiB, free: 22.2 GiB)
+2020-11-08 23:52:09,111 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:52:09,111 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[52] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 23:52:09,111 INFO scheduler.TaskSchedulerImpl: Adding task set 6.0 with 8 tasks
+2020-11-08 23:52:09,112 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[39] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 23:52:09,116 INFO memory.MemoryStore: Block broadcast_7 stored as values in memory (estimated size 102.1 KiB, free 22.2 GiB)
+2020-11-08 23:52:09,117 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 6.0 (TID 19, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 220290 bytes)
+2020-11-08 23:52:09,117 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 6.0 (TID 20, fairlight.nsqdc.city.ac.uk, executor driver, partition 1, PROCESS_LOCAL, 220334 bytes)
+2020-11-08 23:52:09,117 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 6.0 (TID 21, fairlight.nsqdc.city.ac.uk, executor driver, partition 2, PROCESS_LOCAL, 219906 bytes)
+2020-11-08 23:52:09,118 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 6.0 (TID 22, fairlight.nsqdc.city.ac.uk, executor driver, partition 3, PROCESS_LOCAL, 218913 bytes)
+2020-11-08 23:52:09,118 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 6.0 (TID 23, fairlight.nsqdc.city.ac.uk, executor driver, partition 4, PROCESS_LOCAL, 220000 bytes)
+2020-11-08 23:52:09,118 INFO memory.MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 18.7 KiB, free 22.2 GiB)
+2020-11-08 23:52:09,118 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 6.0 (TID 24, fairlight.nsqdc.city.ac.uk, executor driver, partition 5, PROCESS_LOCAL, 220607 bytes)
+2020-11-08 23:52:09,119 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 6.0 (TID 25, fairlight.nsqdc.city.ac.uk, executor driver, partition 6, PROCESS_LOCAL, 220969 bytes)
+2020-11-08 23:52:09,119 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 18.7 KiB, free: 22.2 GiB)
+2020-11-08 23:52:09,119 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 6.0 (TID 26, fairlight.nsqdc.city.ac.uk, executor driver, partition 7, PROCESS_LOCAL, 218619 bytes)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 1.0 in stage 6.0 (TID 20)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 2.0 in stage 6.0 (TID 21)
+2020-11-08 23:52:09,119 INFO spark.SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 5.0 in stage 6.0 (TID 24)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 4.0 in stage 6.0 (TID 23)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 6.0 in stage 6.0 (TID 25)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 3.0 in stage 6.0 (TID 22)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 0.0 in stage 6.0 (TID 19)
+2020-11-08 23:52:09,119 INFO executor.Executor: Running task 7.0 in stage 6.0 (TID 26)
+2020-11-08 23:52:09,120 INFO scheduler.DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[39] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2020-11-08 23:52:09,120 INFO scheduler.TaskSchedulerImpl: Adding task set 5.0 with 8 tasks
+2020-11-08 23:52:09,313 INFO codegen.CodeGenerator: Code generated in 78.954639 ms
+2020-11-08 23:52:09,437 INFO codegen.CodeGenerator: Code generated in 75.474959 ms
+2020-11-08 23:52:09,615 INFO python.PythonRunner: Times: total = 47, boot = 29, init = 4, finish = 14
+2020-11-08 23:52:09,617 INFO executor.Executor: Finished task 7.0 in stage 6.0 (TID 26). 2287 bytes result sent to driver
+2020-11-08 23:52:09,619 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 5.0 (TID 27, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, ANY, 7515 bytes)
+2020-11-08 23:52:09,620 INFO executor.Executor: Running task 0.0 in stage 5.0 (TID 27)
+2020-11-08 23:52:09,620 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 6.0 (TID 26) in 501 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 23:52:09,621 INFO python.PythonRunner: Times: total = 36, boot = 20, init = 4, finish = 12
+2020-11-08 23:52:09,623 INFO python.PythonRunner: Times: total = 38, boot = 24, init = 3, finish = 11
+2020-11-08 23:52:09,623 INFO python.PythonRunner: Times: total = 64, boot = 8, init = 2, finish = 54
+2020-11-08 23:52:09,624 INFO executor.Executor: Finished task 0.0 in stage 6.0 (TID 19). 2287 bytes result sent to driver
+2020-11-08 23:52:09,624 INFO executor.Executor: Finished task 5.0 in stage 6.0 (TID 24). 2287 bytes result sent to driver
+2020-11-08 23:52:09,624 INFO executor.Executor: Finished task 6.0 in stage 6.0 (TID 25). 2287 bytes result sent to driver
+2020-11-08 23:52:09,625 INFO python.PythonRunner: Times: total = 25, boot = 12, init = 3, finish = 10
+2020-11-08 23:52:09,625 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 5.0 (TID 28, fairlight.nsqdc.city.ac.uk, executor driver, partition 1, ANY, 7525 bytes)
+2020-11-08 23:52:09,626 INFO executor.Executor: Running task 1.0 in stage 5.0 (TID 28)
+2020-11-08 23:52:09,626 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 6.0 (TID 19) in 513 ms on fairlight.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 23:52:09,626 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 5.0 (TID 29, fairlight.nsqdc.city.ac.uk, executor driver, partition 2, ANY, 7525 bytes)
+2020-11-08 23:52:09,627 INFO executor.Executor: Finished task 1.0 in stage 6.0 (TID 20). 2287 bytes result sent to driver
+2020-11-08 23:52:09,627 INFO executor.Executor: Running task 2.0 in stage 5.0 (TID 29)
+2020-11-08 23:52:09,627 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 6.0 (TID 24) in 509 ms on fairlight.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 23:52:09,627 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 5.0 (TID 30, fairlight.nsqdc.city.ac.uk, executor driver, partition 3, ANY, 7525 bytes)
+2020-11-08 23:52:09,628 INFO executor.Executor: Running task 3.0 in stage 5.0 (TID 30)
+2020-11-08 23:52:09,628 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 6.0 (TID 25) in 510 ms on fairlight.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 23:52:09,628 INFO python.PythonRunner: Times: total = 61, boot = 4, init = 2, finish = 55
+2020-11-08 23:52:09,628 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 5.0 (TID 31, fairlight.nsqdc.city.ac.uk, executor driver, partition 4, ANY, 7525 bytes)
+2020-11-08 23:52:09,628 INFO python.PythonRunner: Times: total = 78, boot = 16, init = 2, finish = 60
+2020-11-08 23:52:09,628 INFO executor.Executor: Running task 4.0 in stage 5.0 (TID 31)
+2020-11-08 23:52:09,628 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 6.0 (TID 20) in 511 ms on fairlight.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 23:52:09,629 INFO python.PythonRunner: Times: total = 13, boot = -14473, init = 14475, finish = 11
+2020-11-08 23:52:09,630 INFO executor.Executor: Finished task 3.0 in stage 6.0 (TID 22). 2287 bytes result sent to driver
+2020-11-08 23:52:09,630 INFO executor.Executor: Finished task 4.0 in stage 6.0 (TID 23). 2287 bytes result sent to driver
+2020-11-08 23:52:09,631 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 5.0 (TID 32, fairlight.nsqdc.city.ac.uk, executor driver, partition 5, ANY, 7525 bytes)
+2020-11-08 23:52:09,631 INFO executor.Executor: Running task 5.0 in stage 5.0 (TID 32)
+2020-11-08 23:52:09,631 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 6.0 (TID 22) in 514 ms on fairlight.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 23:52:09,631 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 6.0 (TID 23) in 513 ms on fairlight.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 23:52:09,632 INFO executor.Executor: Finished task 2.0 in stage 6.0 (TID 21). 2287 bytes result sent to driver
+2020-11-08 23:52:09,632 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 5.0 (TID 33, fairlight.nsqdc.city.ac.uk, executor driver, partition 6, ANY, 7525 bytes)
+2020-11-08 23:52:09,632 INFO executor.Executor: Running task 6.0 in stage 5.0 (TID 33)
+2020-11-08 23:52:09,633 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 5.0 (TID 34, fairlight.nsqdc.city.ac.uk, executor driver, partition 7, ANY, 7516 bytes)
+2020-11-08 23:52:09,633 INFO executor.Executor: Running task 7.0 in stage 5.0 (TID 34)
+2020-11-08 23:52:09,633 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 6.0 (TID 21) in 516 ms on fairlight.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 23:52:09,633 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2020-11-08 23:52:09,634 INFO scheduler.DAGScheduler: ShuffleMapStage 6 (count at NativeMethodAccessorImpl.java:0) finished in 0.531 s
+2020-11-08 23:52:09,634 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 23:52:09,634 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 5)
+2020-11-08 23:52:09,634 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 9, ShuffleMapStage 7, ShuffleMapStage 8)
+2020-11-08 23:52:09,634 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 23:52:09,725 INFO executor.Executor: Finished task 0.0 in stage 5.0 (TID 27). 1703 bytes result sent to driver
+2020-11-08 23:52:09,726 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 5.0 (TID 27) in 107 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/8)
+2020-11-08 23:52:09,789 INFO driver.connection: Opened connection [connectionId{localValue:12, serverValue:51716}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,789 INFO driver.connection: Opened connection [connectionId{localValue:14, serverValue:51717}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,789 INFO driver.connection: Opened connection [connectionId{localValue:18, serverValue:51721}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,791 INFO driver.connection: Opened connection [connectionId{localValue:16, serverValue:51718}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,791 INFO driver.connection: Opened connection [connectionId{localValue:15, serverValue:51720}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,796 INFO driver.connection: Opened connection [connectionId{localValue:13, serverValue:51719}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:09,801 INFO driver.connection: Opened connection [connectionId{localValue:17, serverValue:51722}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017
+2020-11-08 23:52:10,009 INFO executor.Executor: Finished task 7.0 in stage 5.0 (TID 34). 1703 bytes result sent to driver
+2020-11-08 23:52:10,010 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 5.0 (TID 34) in 378 ms on fairlight.nsqdc.city.ac.uk (executor driver) (2/8)
+2020-11-08 23:52:10,616 INFO executor.Executor: Finished task 2.0 in stage 5.0 (TID 29). 1703 bytes result sent to driver
+2020-11-08 23:52:10,617 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 5.0 (TID 29) in 991 ms on fairlight.nsqdc.city.ac.uk (executor driver) (3/8)
+2020-11-08 23:52:11,110 INFO executor.Executor: Finished task 3.0 in stage 5.0 (TID 30). 1703 bytes result sent to driver
+2020-11-08 23:52:11,111 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 5.0 (TID 30) in 1484 ms on fairlight.nsqdc.city.ac.uk (executor driver) (4/8)
+2020-11-08 23:52:11,494 INFO executor.Executor: Finished task 5.0 in stage 5.0 (TID 32). 1703 bytes result sent to driver
+2020-11-08 23:52:11,495 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 5.0 (TID 32) in 1864 ms on fairlight.nsqdc.city.ac.uk (executor driver) (5/8)
+2020-11-08 23:52:11,852 INFO executor.Executor: Finished task 4.0 in stage 5.0 (TID 31). 1703 bytes result sent to driver
+2020-11-08 23:52:11,853 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 5.0 (TID 31) in 2225 ms on fairlight.nsqdc.city.ac.uk (executor driver) (6/8)
+2020-11-08 23:52:11,854 INFO executor.Executor: Finished task 1.0 in stage 5.0 (TID 28). 1703 bytes result sent to driver
+2020-11-08 23:52:11,855 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 5.0 (TID 28) in 2230 ms on fairlight.nsqdc.city.ac.uk (executor driver) (7/8)
+2020-11-08 23:52:11,917 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 22.7 KiB, free: 22.2 GiB)
+2020-11-08 23:52:11,925 INFO executor.Executor: Finished task 6.0 in stage 5.0 (TID 33). 1746 bytes result sent to driver
+2020-11-08 23:52:11,926 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 5.0 (TID 33) in 2294 ms on fairlight.nsqdc.city.ac.uk (executor driver) (8/8)
+2020-11-08 23:52:11,926 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2020-11-08 23:52:11,927 INFO scheduler.DAGScheduler: ShuffleMapStage 5 (count at NativeMethodAccessorImpl.java:0) finished in 2.813 s
+2020-11-08 23:52:11,927 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 23:52:11,927 INFO scheduler.DAGScheduler: running: Set()
+2020-11-08 23:52:11,927 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 9, ShuffleMapStage 7, ShuffleMapStage 8)
+2020-11-08 23:52:11,927 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 23:52:11,927 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 7 (MapPartitionsRDD[45] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 23:52:11,932 INFO memory.MemoryStore: Block broadcast_8 stored as values in memory (estimated size 121.9 KiB, free 22.2 GiB)
+2020-11-08 23:52:11,935 INFO memory.MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 25.7 KiB, free 22.2 GiB)
+2020-11-08 23:52:11,936 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 25.7 KiB, free: 22.2 GiB)
+2020-11-08 23:52:11,936 INFO spark.SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:52:11,937 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[45] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-08 23:52:11,937 INFO scheduler.TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+2020-11-08 23:52:11,938 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 7.0 (TID 35, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7314 bytes)
+2020-11-08 23:52:11,938 INFO executor.Executor: Running task 0.0 in stage 7.0 (TID 35)
+2020-11-08 23:52:11,946 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (1040.4 KiB) non-empty blocks including 8 (1040.4 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:52:11,946 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 23:52:12,020 INFO codegen.CodeGenerator: Code generated in 37.691844 ms
+2020-11-08 23:52:12,042 INFO codegen.CodeGenerator: Code generated in 13.736899 ms
+2020-11-08 23:52:13,076 INFO python.PythonUDFRunner: Times: total = 1033, boot = -2791, init = 3230, finish = 594
+2020-11-08 23:52:13,078 INFO executor.Executor: Finished task 0.0 in stage 7.0 (TID 35). 3529 bytes result sent to driver
+2020-11-08 23:52:13,079 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 7.0 (TID 35) in 1142 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-08 23:52:13,079 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2020-11-08 23:52:13,080 INFO scheduler.DAGScheduler: ShuffleMapStage 7 (count at NativeMethodAccessorImpl.java:0) finished in 1.151 s
+2020-11-08 23:52:13,080 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-08 23:52:13,080 INFO scheduler.DAGScheduler: running: Set()
+2020-11-08 23:52:13,080 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 9, ShuffleMapStage 8)
+2020-11-08 23:52:13,080 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-08 23:52:13,082 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[83] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-08 23:52:13,104 INFO memory.MemoryStore: Block broadcast_9 stored as values in memory (estimated size 250.6 KiB, free 22.2 GiB)
+2020-11-08 23:52:13,108 INFO memory.MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 66.4 KiB, free 22.2 GiB)
+2020-11-08 23:52:13,109 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.4 KiB, free: 22.2 GiB)
+2020-11-08 23:52:13,109 INFO spark.SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1200
+2020-11-08 23:52:13,110 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[83] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-08 23:52:13,110 INFO scheduler.TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+2020-11-08 23:52:13,115 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 8.0 (TID 36, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7750 bytes)
+2020-11-08 23:52:13,116 INFO executor.Executor: Running task 0.0 in stage 8.0 (TID 36)
+2020-11-08 23:52:13,166 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (56.2 KiB) non-empty blocks including 1 (56.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:52:13,166 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 23:52:13,183 INFO codegen.CodeGenerator: Code generated in 9.563211 ms
+2020-11-08 23:52:13,197 INFO codegen.CodeGenerator: Code generated in 5.507216 ms
+2020-11-08 23:52:13,219 INFO codegen.CodeGenerator: Code generated in 5.375237 ms
+2020-11-08 23:52:13,224 INFO codegen.CodeGenerator: Code generated in 3.720821 ms
+2020-11-08 23:52:13,245 INFO codegen.CodeGenerator: Code generated in 5.586445 ms
+2020-11-08 23:52:13,251 INFO codegen.CodeGenerator: Code generated in 3.606564 ms
+2020-11-08 23:52:13,255 INFO codegen.CodeGenerator: Code generated in 3.552244 ms
+2020-11-08 23:52:13,263 INFO codegen.CodeGenerator: Code generated in 4.336646 ms
+2020-11-08 23:52:13,268 INFO codegen.CodeGenerator: Code generated in 3.400343 ms
+2020-11-08 23:52:13,270 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (2.0 MiB) non-empty blocks including 8 (2.0 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:52:13,270 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 23:52:13,278 INFO codegen.CodeGenerator: Code generated in 4.60666 ms
+2020-11-08 23:52:13,283 INFO codegen.CodeGenerator: Code generated in 3.68284 ms
+2020-11-08 23:52:13,290 INFO codegen.CodeGenerator: Code generated in 4.82205 ms
+2020-11-08 23:52:13,349 INFO codegen.CodeGenerator: Code generated in 5.142567 ms
+2020-11-08 23:52:13,354 INFO codegen.CodeGenerator: Code generated in 3.522814 ms
+2020-11-08 23:52:13,360 INFO codegen.CodeGenerator: Code generated in 3.535486 ms
+2020-11-08 23:52:13,368 INFO codegen.CodeGenerator: Code generated in 5.364929 ms
+2020-11-08 23:52:13,374 INFO codegen.CodeGenerator: Code generated in 3.855926 ms
+2020-11-08 23:52:13,378 INFO codegen.CodeGenerator: Code generated in 3.213924 ms
+2020-11-08 23:52:13,408 INFO codegen.CodeGenerator: Code generated in 5.213184 ms
+2020-11-08 23:52:13,422 INFO codegen.CodeGenerator: Code generated in 9.120329 ms
+2020-11-08 23:52:15,438 INFO python.PythonUDFRunner: Times: total = 1982, boot = -4193, init = 4297, finish = 1878
+2020-11-08 23:52:15,440 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (56.2 KiB) non-empty blocks including 1 (56.2 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:52:15,440 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 23:52:15,453 INFO storage.ShuffleBlockFetcherIterator: Getting 8 (2.0 MiB) non-empty blocks including 8 (2.0 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-08 23:52:15,453 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-08 23:52:15,509 INFO codegen.CodeGenerator: Code generated in 9.918338 ms
+2020-11-08 23:52:15,517 INFO codegen.CodeGenerator: Code generated in 4.254023 ms
+2020-11-08 23:52:15,527 INFO codegen.CodeGenerator: Code generated in 6.776659 ms
+2020-11-08 23:52:15,543 INFO codegen.CodeGenerator: Code generated in 11.298117 ms
+2020-11-08 23:52:15,962 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 25.7 KiB, free: 22.2 GiB)
+2020-11-08 23:52:15,965 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 18.7 KiB, free: 22.2 GiB)
+2020-11-08 23:52:16,952 INFO connection.MongoClientCache: Closing MongoClient: [c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017]
+2020-11-08 23:52:16,953 INFO driver.connection: Closed connection [connectionId{localValue:11, serverValue:51715}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,955 INFO driver.connection: Closed connection [connectionId{localValue:12, serverValue:51716}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,956 INFO driver.connection: Closed connection [connectionId{localValue:16, serverValue:51718}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,956 INFO driver.connection: Closed connection [connectionId{localValue:18, serverValue:51721}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,956 INFO driver.connection: Closed connection [connectionId{localValue:13, serverValue:51719}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,957 INFO driver.connection: Closed connection [connectionId{localValue:15, serverValue:51720}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,957 INFO driver.connection: Closed connection [connectionId{localValue:14, serverValue:51717}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-08 23:52:16,958 INFO driver.connection: Closed connection [connectionId{localValue:17, serverValue:51722}] to c4dm-xenserv-virt5.eecs.qmul.ac.uk:27017 because the pool has been closed.
+2020-11-09 00:04:01,840 INFO python.PythonUDFRunner: Times: total = 2032, boot = -6271, init = 6299, finish = 2004
+2020-11-09 00:04:02,897 INFO python.PythonUDFRunner: Times: total = 707359, boot = -6286, init = 6612, finish = 707033
+2020-11-09 00:04:02,902 INFO memory.MemoryStore: Block rdd_78_0 stored as values in memory (estimated size 4.9 MiB, free 22.0 GiB)
+2020-11-09 00:04:02,902 INFO storage.BlockManagerInfo: Added rdd_78_0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 4.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:02,916 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3064 - SHARED_BUCKETS.nullCount#3063) > 0)
+2020-11-09 00:04:02,917 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3074 - MH_SIM.nullCount#3073) > 0)
+2020-11-09 00:04:02,917 INFO columnar.InMemoryTableScanExec: Predicate (SHARED_BUCKETS#2425 = 0) generates partition filter: ((SHARED_BUCKETS.lowerBound#3062 <= 0) AND (0 <= SHARED_BUCKETS.upperBound#3061))
+2020-11-09 00:04:02,931 INFO codegen.CodeGenerator: Code generated in 11.367969 ms
+2020-11-09 00:04:02,997 INFO executor.Executor: Finished task 0.0 in stage 8.0 (TID 36). 8233 bytes result sent to driver
+2020-11-09 00:04:02,999 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 8.0 (TID 36) in 709889 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:02,999 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,001 INFO scheduler.DAGScheduler: ShuffleMapStage 8 (count at NativeMethodAccessorImpl.java:0) finished in 709.917 s
+2020-11-09 00:04:03,002 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:03,002 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:03,002 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 9)
+2020-11-09 00:04:03,002 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:03,003 INFO scheduler.DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[86] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,006 INFO memory.MemoryStore: Block broadcast_10 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,008 INFO memory.MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,008 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,009 INFO spark.SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,009 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[86] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,009 INFO scheduler.TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+2020-11-09 00:04:03,011 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 9.0 (TID 37, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:03,011 INFO executor.Executor: Running task 0.0 in stage 9.0 (TID 37)
+2020-11-09 00:04:03,015 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:03,015 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:03,019 INFO executor.Executor: Finished task 0.0 in stage 9.0 (TID 37). 2648 bytes result sent to driver
+2020-11-09 00:04:03,020 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 9.0 (TID 37) in 10 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,020 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,021 INFO scheduler.DAGScheduler: ResultStage 9 (count at NativeMethodAccessorImpl.java:0) finished in 0.017 s
+2020-11-09 00:04:03,021 INFO scheduler.DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:03,021 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+2020-11-09 00:04:03,022 INFO scheduler.DAGScheduler: Job 3 finished: count at NativeMethodAccessorImpl.java:0, took 714.423172 s
+2020-11-09 00:04:03,177 INFO codegen.CodeGenerator: Code generated in 10.329579 ms
+2020-11-09 00:04:03,209 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:03,215 INFO scheduler.DAGScheduler: Registering RDD 91 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 6
+2020-11-09 00:04:03,215 INFO scheduler.DAGScheduler: Got job 4 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:03,215 INFO scheduler.DAGScheduler: Final stage: ResultStage 14 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:03,215 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+2020-11-09 00:04:03,216 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 13)
+2020-11-09 00:04:03,218 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 13 (MapPartitionsRDD[91] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,227 INFO memory.MemoryStore: Block broadcast_11 stored as values in memory (estimated size 250.8 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,230 INFO memory.MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,230 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,231 INFO spark.SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,231 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 13 (MapPartitionsRDD[91] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,231 INFO scheduler.TaskSchedulerImpl: Adding task set 13.0 with 1 tasks
+2020-11-09 00:04:03,234 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 13.0 (TID 38, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:03,235 INFO executor.Executor: Running task 0.0 in stage 13.0 (TID 38)
+2020-11-09 00:04:03,250 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:03,251 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3149 - SHARED_BUCKETS.nullCount#3148) > 0)
+2020-11-09 00:04:03,251 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3159 - MH_SIM.nullCount#3158) > 0)
+2020-11-09 00:04:03,257 INFO codegen.CodeGenerator: Code generated in 4.526038 ms
+2020-11-09 00:04:03,291 INFO executor.Executor: Finished task 0.0 in stage 13.0 (TID 38). 7846 bytes result sent to driver
+2020-11-09 00:04:03,292 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 13.0 (TID 38) in 58 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,293 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,293 INFO scheduler.DAGScheduler: ShuffleMapStage 13 (count at NativeMethodAccessorImpl.java:0) finished in 0.074 s
+2020-11-09 00:04:03,293 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:03,293 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:03,293 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 14)
+2020-11-09 00:04:03,293 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:03,294 INFO scheduler.DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[94] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,296 INFO memory.MemoryStore: Block broadcast_12 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,297 INFO memory.MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,298 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,298 INFO spark.SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,299 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[94] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,299 INFO scheduler.TaskSchedulerImpl: Adding task set 14.0 with 1 tasks
+2020-11-09 00:04:03,300 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 14.0 (TID 39, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:03,300 INFO executor.Executor: Running task 0.0 in stage 14.0 (TID 39)
+2020-11-09 00:04:03,303 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:03,303 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:03,304 INFO executor.Executor: Finished task 0.0 in stage 14.0 (TID 39). 2648 bytes result sent to driver
+2020-11-09 00:04:03,305 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 14.0 (TID 39) in 6 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,305 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,306 INFO scheduler.DAGScheduler: ResultStage 14 (count at NativeMethodAccessorImpl.java:0) finished in 0.011 s
+2020-11-09 00:04:03,306 INFO scheduler.DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:03,306 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+2020-11-09 00:04:03,306 INFO scheduler.DAGScheduler: Job 4 finished: count at NativeMethodAccessorImpl.java:0, took 0.097110 s
+2020-11-09 00:04:03,443 INFO codegen.CodeGenerator: Code generated in 8.296 ms
+2020-11-09 00:04:03,465 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:03,467 INFO scheduler.DAGScheduler: Registering RDD 99 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 7
+2020-11-09 00:04:03,467 INFO scheduler.DAGScheduler: Got job 5 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:03,467 INFO scheduler.DAGScheduler: Final stage: ResultStage 19 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:03,467 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 18)
+2020-11-09 00:04:03,468 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 18)
+2020-11-09 00:04:03,469 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 18 (MapPartitionsRDD[99] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,479 INFO memory.MemoryStore: Block broadcast_13 stored as values in memory (estimated size 250.8 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,481 INFO memory.MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,482 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,482 INFO spark.SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,483 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 18 (MapPartitionsRDD[99] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,483 INFO scheduler.TaskSchedulerImpl: Adding task set 18.0 with 1 tasks
+2020-11-09 00:04:03,485 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 18.0 (TID 40, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:03,485 INFO executor.Executor: Running task 0.0 in stage 18.0 (TID 40)
+2020-11-09 00:04:03,497 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:03,497 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3234 - SHARED_BUCKETS.nullCount#3233) > 0)
+2020-11-09 00:04:03,498 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3244 - MH_SIM.nullCount#3243) > 0)
+2020-11-09 00:04:03,532 INFO executor.Executor: Finished task 0.0 in stage 18.0 (TID 40). 7846 bytes result sent to driver
+2020-11-09 00:04:03,533 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 18.0 (TID 40) in 49 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,533 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,534 INFO scheduler.DAGScheduler: ShuffleMapStage 18 (count at NativeMethodAccessorImpl.java:0) finished in 0.063 s
+2020-11-09 00:04:03,534 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:03,534 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:03,534 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 19)
+2020-11-09 00:04:03,534 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:03,535 INFO scheduler.DAGScheduler: Submitting ResultStage 19 (MapPartitionsRDD[102] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,537 INFO memory.MemoryStore: Block broadcast_14 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,539 INFO memory.MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,539 INFO storage.BlockManagerInfo: Added broadcast_14_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,540 INFO spark.SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,540 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 19 (MapPartitionsRDD[102] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,540 INFO scheduler.TaskSchedulerImpl: Adding task set 19.0 with 1 tasks
+2020-11-09 00:04:03,541 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 19.0 (TID 41, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:03,541 INFO executor.Executor: Running task 0.0 in stage 19.0 (TID 41)
+2020-11-09 00:04:03,544 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:03,544 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:03,546 INFO executor.Executor: Finished task 0.0 in stage 19.0 (TID 41). 2648 bytes result sent to driver
+2020-11-09 00:04:03,546 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 19.0 (TID 41) in 5 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,546 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 19.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,547 INFO scheduler.DAGScheduler: ResultStage 19 (count at NativeMethodAccessorImpl.java:0) finished in 0.011 s
+2020-11-09 00:04:03,547 INFO scheduler.DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:03,547 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 19: Stage finished
+2020-11-09 00:04:03,547 INFO scheduler.DAGScheduler: Job 5 finished: count at NativeMethodAccessorImpl.java:0, took 0.082587 s
+2020-11-09 00:04:03,659 INFO codegen.CodeGenerator: Code generated in 8.776126 ms
+2020-11-09 00:04:03,672 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:03,675 INFO scheduler.DAGScheduler: Registering RDD 107 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 8
+2020-11-09 00:04:03,675 INFO scheduler.DAGScheduler: Got job 6 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:03,675 INFO scheduler.DAGScheduler: Final stage: ResultStage 24 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:03,675 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 23)
+2020-11-09 00:04:03,675 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 23)
+2020-11-09 00:04:03,677 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 23 (MapPartitionsRDD[107] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,689 INFO memory.MemoryStore: Block broadcast_15 stored as values in memory (estimated size 250.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,691 INFO memory.MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,691 INFO storage.BlockManagerInfo: Added broadcast_15_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,692 INFO spark.SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,692 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 23 (MapPartitionsRDD[107] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,693 INFO scheduler.TaskSchedulerImpl: Adding task set 23.0 with 1 tasks
+2020-11-09 00:04:03,694 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 23.0 (TID 42, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:03,694 INFO executor.Executor: Running task 0.0 in stage 23.0 (TID 42)
+2020-11-09 00:04:03,707 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:03,707 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3319 - SHARED_BUCKETS.nullCount#3318) > 0)
+2020-11-09 00:04:03,707 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3329 - MH_SIM.nullCount#3328) > 0)
+2020-11-09 00:04:03,708 INFO columnar.InMemoryTableScanExec: Predicate (SHARED_BUCKETS#2425 = 0) generates partition filter: ((SHARED_BUCKETS.lowerBound#3317 <= 0) AND (0 <= SHARED_BUCKETS.upperBound#3316))
+2020-11-09 00:04:03,755 INFO executor.Executor: Finished task 0.0 in stage 23.0 (TID 42). 7846 bytes result sent to driver
+2020-11-09 00:04:03,757 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 23.0 (TID 42) in 64 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,757 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,758 INFO scheduler.DAGScheduler: ShuffleMapStage 23 (count at NativeMethodAccessorImpl.java:0) finished in 0.079 s
+2020-11-09 00:04:03,758 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:03,758 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:03,758 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 24)
+2020-11-09 00:04:03,758 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:03,758 INFO scheduler.DAGScheduler: Submitting ResultStage 24 (MapPartitionsRDD[110] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,760 INFO memory.MemoryStore: Block broadcast_16 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,762 INFO memory.MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,762 INFO storage.BlockManagerInfo: Added broadcast_16_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,762 INFO spark.SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,763 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 24 (MapPartitionsRDD[110] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,763 INFO scheduler.TaskSchedulerImpl: Adding task set 24.0 with 1 tasks
+2020-11-09 00:04:03,764 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 24.0 (TID 43, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:03,765 INFO executor.Executor: Running task 0.0 in stage 24.0 (TID 43)
+2020-11-09 00:04:03,767 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:03,767 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:03,769 INFO executor.Executor: Finished task 0.0 in stage 24.0 (TID 43). 2648 bytes result sent to driver
+2020-11-09 00:04:03,769 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 24.0 (TID 43) in 5 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,769 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 24.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,770 INFO scheduler.DAGScheduler: ResultStage 24 (count at NativeMethodAccessorImpl.java:0) finished in 0.010 s
+2020-11-09 00:04:03,770 INFO scheduler.DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:03,770 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 24: Stage finished
+2020-11-09 00:04:03,770 INFO scheduler.DAGScheduler: Job 6 finished: count at NativeMethodAccessorImpl.java:0, took 0.098064 s
+2020-11-09 00:04:03,880 INFO codegen.CodeGenerator: Code generated in 8.4856 ms
+2020-11-09 00:04:03,894 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:03,896 INFO scheduler.DAGScheduler: Registering RDD 115 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 9
+2020-11-09 00:04:03,896 INFO scheduler.DAGScheduler: Got job 7 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:03,897 INFO scheduler.DAGScheduler: Final stage: ResultStage 29 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:03,897 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 28)
+2020-11-09 00:04:03,897 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 28)
+2020-11-09 00:04:03,898 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 28 (MapPartitionsRDD[115] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,909 INFO memory.MemoryStore: Block broadcast_17 stored as values in memory (estimated size 250.8 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,910 INFO memory.MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,911 INFO storage.BlockManagerInfo: Added broadcast_17_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,911 INFO spark.SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,912 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 28 (MapPartitionsRDD[115] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,912 INFO scheduler.TaskSchedulerImpl: Adding task set 28.0 with 1 tasks
+2020-11-09 00:04:03,913 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 28.0 (TID 44, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:03,913 INFO executor.Executor: Running task 0.0 in stage 28.0 (TID 44)
+2020-11-09 00:04:03,925 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:03,925 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(JS#2456) generates partition filter: ((JS.count#3409 - JS.nullCount#3408) > 0)
+2020-11-09 00:04:03,925 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3414 - MH_SIM.nullCount#3413) > 0)
+2020-11-09 00:04:03,933 INFO codegen.CodeGenerator: Code generated in 6.490955 ms
+2020-11-09 00:04:03,971 INFO executor.Executor: Finished task 0.0 in stage 28.0 (TID 44). 7846 bytes result sent to driver
+2020-11-09 00:04:03,972 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 28.0 (TID 44) in 60 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,972 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 28.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,973 INFO scheduler.DAGScheduler: ShuffleMapStage 28 (count at NativeMethodAccessorImpl.java:0) finished in 0.073 s
+2020-11-09 00:04:03,973 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:03,973 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:03,974 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 29)
+2020-11-09 00:04:03,974 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:03,974 INFO scheduler.DAGScheduler: Submitting ResultStage 29 (MapPartitionsRDD[118] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:03,976 INFO memory.MemoryStore: Block broadcast_18 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,978 INFO memory.MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:03,978 INFO storage.BlockManagerInfo: Added broadcast_18_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:03,979 INFO spark.SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:03,979 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 29 (MapPartitionsRDD[118] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:03,979 INFO scheduler.TaskSchedulerImpl: Adding task set 29.0 with 1 tasks
+2020-11-09 00:04:03,980 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 29.0 (TID 45, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:03,980 INFO executor.Executor: Running task 0.0 in stage 29.0 (TID 45)
+2020-11-09 00:04:03,983 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:03,983 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:03,984 INFO executor.Executor: Finished task 0.0 in stage 29.0 (TID 45). 2648 bytes result sent to driver
+2020-11-09 00:04:03,985 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 29.0 (TID 45) in 5 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:03,985 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 29.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:03,985 INFO scheduler.DAGScheduler: ResultStage 29 (count at NativeMethodAccessorImpl.java:0) finished in 0.010 s
+2020-11-09 00:04:03,985 INFO scheduler.DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:03,985 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 29: Stage finished
+2020-11-09 00:04:03,986 INFO scheduler.DAGScheduler: Job 7 finished: count at NativeMethodAccessorImpl.java:0, took 0.091200 s
+2020-11-09 00:04:04,092 INFO codegen.CodeGenerator: Code generated in 8.393305 ms
+2020-11-09 00:04:04,105 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:04,106 INFO scheduler.DAGScheduler: Registering RDD 123 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 10
+2020-11-09 00:04:04,107 INFO scheduler.DAGScheduler: Got job 8 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:04,107 INFO scheduler.DAGScheduler: Final stage: ResultStage 34 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:04,107 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 33)
+2020-11-09 00:04:04,107 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 33)
+2020-11-09 00:04:04,109 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 33 (MapPartitionsRDD[123] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:04,119 INFO memory.MemoryStore: Block broadcast_19 stored as values in memory (estimated size 250.8 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,122 INFO memory.MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 66.5 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,122 INFO storage.BlockManagerInfo: Added broadcast_19_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.5 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,122 INFO spark.SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,123 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 33 (MapPartitionsRDD[123] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,123 INFO scheduler.TaskSchedulerImpl: Adding task set 33.0 with 1 tasks
+2020-11-09 00:04:04,124 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 33.0 (TID 46, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:04,125 INFO executor.Executor: Running task 0.0 in stage 33.0 (TID 46)
+2020-11-09 00:04:04,136 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:04,137 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(JS#2456) generates partition filter: ((JS.count#3494 - JS.nullCount#3493) > 0)
+2020-11-09 00:04:04,137 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3499 - MH_SIM.nullCount#3498) > 0)
+2020-11-09 00:04:04,187 INFO executor.Executor: Finished task 0.0 in stage 33.0 (TID 46). 7846 bytes result sent to driver
+2020-11-09 00:04:04,188 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 33.0 (TID 46) in 64 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,188 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 33.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,190 INFO scheduler.DAGScheduler: ShuffleMapStage 33 (count at NativeMethodAccessorImpl.java:0) finished in 0.080 s
+2020-11-09 00:04:04,190 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:04,190 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:04,190 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 34)
+2020-11-09 00:04:04,190 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:04,191 INFO scheduler.DAGScheduler: Submitting ResultStage 34 (MapPartitionsRDD[126] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:04,193 INFO memory.MemoryStore: Block broadcast_20 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,204 INFO memory.MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,204 INFO storage.BlockManagerInfo: Added broadcast_20_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,205 INFO spark.SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,206 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 34 (MapPartitionsRDD[126] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,206 INFO scheduler.TaskSchedulerImpl: Adding task set 34.0 with 1 tasks
+2020-11-09 00:04:04,209 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 34.0 (TID 47, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:04,210 INFO executor.Executor: Running task 0.0 in stage 34.0 (TID 47)
+2020-11-09 00:04:04,215 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:04,215 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:04,218 INFO executor.Executor: Finished task 0.0 in stage 34.0 (TID 47). 2648 bytes result sent to driver
+2020-11-09 00:04:04,219 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 34.0 (TID 47) in 11 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,219 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 34.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,219 INFO scheduler.DAGScheduler: ResultStage 34 (count at NativeMethodAccessorImpl.java:0) finished in 0.027 s
+2020-11-09 00:04:04,220 INFO scheduler.DAGScheduler: Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:04,220 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 34: Stage finished
+2020-11-09 00:04:04,220 INFO scheduler.DAGScheduler: Job 8 finished: count at NativeMethodAccessorImpl.java:0, took 0.115390 s
+2020-11-09 00:04:04,340 INFO codegen.CodeGenerator: Code generated in 9.844236 ms
+2020-11-09 00:04:04,352 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:04,354 INFO scheduler.DAGScheduler: Registering RDD 131 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 11
+2020-11-09 00:04:04,355 INFO scheduler.DAGScheduler: Got job 9 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:04,355 INFO scheduler.DAGScheduler: Final stage: ResultStage 39 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:04,355 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 38)
+2020-11-09 00:04:04,355 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 38)
+2020-11-09 00:04:04,357 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 38 (MapPartitionsRDD[131] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:04,368 INFO memory.MemoryStore: Block broadcast_21 stored as values in memory (estimated size 250.9 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,370 INFO memory.MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,370 INFO storage.BlockManagerInfo: Added broadcast_21_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,370 INFO spark.SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,371 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 38 (MapPartitionsRDD[131] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,371 INFO scheduler.TaskSchedulerImpl: Adding task set 38.0 with 1 tasks
+2020-11-09 00:04:04,372 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 38.0 (TID 48, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:04,372 INFO executor.Executor: Running task 0.0 in stage 38.0 (TID 48)
+2020-11-09 00:04:04,387 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:04,387 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(JS#2456) generates partition filter: ((JS.count#3579 - JS.nullCount#3578) > 0)
+2020-11-09 00:04:04,387 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3584 - MH_SIM.nullCount#3583) > 0)
+2020-11-09 00:04:04,432 INFO executor.Executor: Finished task 0.0 in stage 38.0 (TID 48). 7846 bytes result sent to driver
+2020-11-09 00:04:04,434 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 38.0 (TID 48) in 63 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,434 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 38.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,435 INFO scheduler.DAGScheduler: ShuffleMapStage 38 (count at NativeMethodAccessorImpl.java:0) finished in 0.077 s
+2020-11-09 00:04:04,435 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:04,435 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:04,435 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 39)
+2020-11-09 00:04:04,435 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:04,436 INFO scheduler.DAGScheduler: Submitting ResultStage 39 (MapPartitionsRDD[134] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:04,438 INFO memory.MemoryStore: Block broadcast_22 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,440 INFO memory.MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,441 INFO storage.BlockManagerInfo: Added broadcast_22_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,441 INFO spark.SparkContext: Created broadcast 22 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,442 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 39 (MapPartitionsRDD[134] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,442 INFO scheduler.TaskSchedulerImpl: Adding task set 39.0 with 1 tasks
+2020-11-09 00:04:04,443 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 39.0 (TID 49, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:04,443 INFO executor.Executor: Running task 0.0 in stage 39.0 (TID 49)
+2020-11-09 00:04:04,446 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:04,446 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:04,448 INFO executor.Executor: Finished task 0.0 in stage 39.0 (TID 49). 2648 bytes result sent to driver
+2020-11-09 00:04:04,448 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 39.0 (TID 49) in 5 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,448 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 39.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,449 INFO scheduler.DAGScheduler: ResultStage 39 (count at NativeMethodAccessorImpl.java:0) finished in 0.012 s
+2020-11-09 00:04:04,449 INFO scheduler.DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:04,450 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 39: Stage finished
+2020-11-09 00:04:04,450 INFO scheduler.DAGScheduler: Job 9 finished: count at NativeMethodAccessorImpl.java:0, took 0.097305 s
+2020-11-09 00:04:04,555 INFO codegen.CodeGenerator: Code generated in 7.713858 ms
+2020-11-09 00:04:04,578 INFO spark.SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+2020-11-09 00:04:04,581 INFO scheduler.DAGScheduler: Registering RDD 139 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 12
+2020-11-09 00:04:04,581 INFO scheduler.DAGScheduler: Got job 10 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2020-11-09 00:04:04,581 INFO scheduler.DAGScheduler: Final stage: ResultStage 44 (count at NativeMethodAccessorImpl.java:0)
+2020-11-09 00:04:04,581 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 43)
+2020-11-09 00:04:04,582 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 43)
+2020-11-09 00:04:04,583 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 43 (MapPartitionsRDD[139] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:04,592 INFO memory.MemoryStore: Block broadcast_23 stored as values in memory (estimated size 250.9 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,594 INFO memory.MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,594 INFO storage.BlockManagerInfo: Added broadcast_23_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,595 INFO spark.SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,595 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 43 (MapPartitionsRDD[139] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,595 INFO scheduler.TaskSchedulerImpl: Adding task set 43.0 with 1 tasks
+2020-11-09 00:04:04,597 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 43.0 (TID 50, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7750 bytes)
+2020-11-09 00:04:04,598 INFO executor.Executor: Running task 0.0 in stage 43.0 (TID 50)
+2020-11-09 00:04:04,609 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:04,609 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(JS#2456) generates partition filter: ((JS.count#3664 - JS.nullCount#3663) > 0)
+2020-11-09 00:04:04,609 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3669 - MH_SIM.nullCount#3668) > 0)
+2020-11-09 00:04:04,642 INFO executor.Executor: Finished task 0.0 in stage 43.0 (TID 50). 7846 bytes result sent to driver
+2020-11-09 00:04:04,644 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 43.0 (TID 50) in 48 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,644 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 43.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,645 INFO scheduler.DAGScheduler: ShuffleMapStage 43 (count at NativeMethodAccessorImpl.java:0) finished in 0.061 s
+2020-11-09 00:04:04,645 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2020-11-09 00:04:04,645 INFO scheduler.DAGScheduler: running: Set()
+2020-11-09 00:04:04,645 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 44)
+2020-11-09 00:04:04,645 INFO scheduler.DAGScheduler: failed: Set()
+2020-11-09 00:04:04,645 INFO scheduler.DAGScheduler: Submitting ResultStage 44 (MapPartitionsRDD[142] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2020-11-09 00:04:04,647 INFO memory.MemoryStore: Block broadcast_24 stored as values in memory (estimated size 10.1 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,649 INFO memory.MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,649 INFO storage.BlockManagerInfo: Added broadcast_24_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,650 INFO spark.SparkContext: Created broadcast 24 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,650 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 44 (MapPartitionsRDD[142] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,650 INFO scheduler.TaskSchedulerImpl: Adding task set 44.0 with 1 tasks
+2020-11-09 00:04:04,651 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 44.0 (TID 51, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+2020-11-09 00:04:04,652 INFO executor.Executor: Running task 0.0 in stage 44.0 (TID 51)
+2020-11-09 00:04:04,655 INFO storage.ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2020-11-09 00:04:04,655 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+2020-11-09 00:04:04,656 INFO executor.Executor: Finished task 0.0 in stage 44.0 (TID 51). 2648 bytes result sent to driver
+2020-11-09 00:04:04,657 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 44.0 (TID 51) in 6 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,657 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 44.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,657 INFO scheduler.DAGScheduler: ResultStage 44 (count at NativeMethodAccessorImpl.java:0) finished in 0.011 s
+2020-11-09 00:04:04,658 INFO scheduler.DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:04,658 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 44: Stage finished
+2020-11-09 00:04:04,658 INFO scheduler.DAGScheduler: Job 10 finished: count at NativeMethodAccessorImpl.java:0, took 0.080091 s
+2020-11-09 00:04:04,816 INFO codegen.CodeGenerator: Code generated in 7.426255 ms
+2020-11-09 00:04:04,835 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413
+2020-11-09 00:04:04,837 INFO scheduler.DAGScheduler: Got job 11 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413) with 1 output partitions
+2020-11-09 00:04:04,837 INFO scheduler.DAGScheduler: Final stage: ResultStage 48 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413)
+2020-11-09 00:04:04,837 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 46, ShuffleMapStage 47)
+2020-11-09 00:04:04,837 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:04,838 INFO scheduler.DAGScheduler: Submitting ResultStage 48 (MapPartitionsRDD[147] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413), which has no missing parents
+2020-11-09 00:04:04,846 INFO memory.MemoryStore: Block broadcast_25 stored as values in memory (estimated size 250.9 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,848 INFO memory.MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 66.2 KiB, free 22.2 GiB)
+2020-11-09 00:04:04,848 INFO storage.BlockManagerInfo: Added broadcast_25_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.2 KiB, free: 22.2 GiB)
+2020-11-09 00:04:04,849 INFO spark.SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:04,849 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 48 (MapPartitionsRDD[147] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:04,849 INFO scheduler.TaskSchedulerImpl: Adding task set 48.0 with 1 tasks
+2020-11-09 00:04:04,850 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 48.0 (TID 52, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:04,850 INFO executor.Executor: Running task 0.0 in stage 48.0 (TID 52)
+2020-11-09 00:04:04,864 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:04,864 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3736 - SHARED_BUCKETS.nullCount#3735) > 0)
+2020-11-09 00:04:04,864 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3746 - MH_SIM.nullCount#3745) > 0)
+2020-11-09 00:04:04,941 INFO executor.Executor: Finished task 0.0 in stage 48.0 (TID 52). 896692 bytes result sent to driver
+2020-11-09 00:04:04,942 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 48.0 (TID 52) in 92 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:04,943 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 48.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:04,943 INFO scheduler.DAGScheduler: ResultStage 48 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413) finished in 0.104 s
+2020-11-09 00:04:04,944 INFO scheduler.DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:04,944 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 48: Stage finished
+2020-11-09 00:04:04,944 INFO scheduler.DAGScheduler: Job 11 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:413, took 0.108455 s
+2020-11-09 00:04:05,840 INFO storage.BlockManagerInfo: Removed broadcast_13_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,843 INFO storage.BlockManagerInfo: Removed broadcast_25_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.2 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,848 INFO storage.BlockManagerInfo: Removed broadcast_24_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,851 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,854 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,855 INFO codegen.CodeGenerator: Code generated in 13.44818 ms
+2020-11-09 00:04:05,857 INFO storage.BlockManagerInfo: Removed broadcast_23_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,861 INFO storage.BlockManagerInfo: Removed broadcast_22_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,864 INFO storage.BlockManagerInfo: Removed broadcast_15_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,867 INFO storage.BlockManagerInfo: Removed broadcast_20_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,871 INFO storage.BlockManagerInfo: Removed broadcast_14_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,874 INFO storage.BlockManagerInfo: Removed broadcast_19_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.5 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,883 INFO storage.BlockManagerInfo: Removed broadcast_21_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,884 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419
+2020-11-09 00:04:05,885 INFO scheduler.DAGScheduler: Got job 12 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419) with 1 output partitions
+2020-11-09 00:04:05,885 INFO scheduler.DAGScheduler: Final stage: ResultStage 52 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419)
+2020-11-09 00:04:05,885 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 51, ShuffleMapStage 50)
+2020-11-09 00:04:05,886 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:05,886 INFO scheduler.DAGScheduler: Submitting ResultStage 52 (MapPartitionsRDD[152] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419), which has no missing parents
+2020-11-09 00:04:05,887 INFO storage.BlockManagerInfo: Removed broadcast_16_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,890 INFO storage.BlockManagerInfo: Removed broadcast_18_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,893 INFO storage.BlockManagerInfo: Removed broadcast_12_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 5.0 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,895 INFO memory.MemoryStore: Block broadcast_26 stored as values in memory (estimated size 250.7 KiB, free 22.2 GiB)
+2020-11-09 00:04:05,895 INFO storage.BlockManagerInfo: Removed broadcast_17_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,897 INFO memory.MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 66.2 KiB, free 22.2 GiB)
+2020-11-09 00:04:05,897 INFO storage.BlockManagerInfo: Added broadcast_26_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.2 KiB, free: 22.2 GiB)
+2020-11-09 00:04:05,898 INFO spark.SparkContext: Created broadcast 26 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:05,898 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 52 (MapPartitionsRDD[152] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:05,898 INFO scheduler.TaskSchedulerImpl: Adding task set 52.0 with 1 tasks
+2020-11-09 00:04:05,899 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 52.0 (TID 53, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:05,900 INFO executor.Executor: Running task 0.0 in stage 52.0 (TID 53)
+2020-11-09 00:04:05,910 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:05,910 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3811 - SHARED_BUCKETS.nullCount#3810) > 0)
+2020-11-09 00:04:05,910 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3821 - MH_SIM.nullCount#3820) > 0)
+2020-11-09 00:04:05,911 INFO columnar.InMemoryTableScanExec: Predicate (SHARED_BUCKETS#2425 = 0) generates partition filter: ((SHARED_BUCKETS.lowerBound#3809 <= 0) AND (0 <= SHARED_BUCKETS.upperBound#3808))
+2020-11-09 00:04:06,059 INFO memory.MemoryStore: Block taskresult_53 stored as bytes in memory (estimated size 4.9 MiB, free 22.2 GiB)
+2020-11-09 00:04:06,059 INFO storage.BlockManagerInfo: Added taskresult_53 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 4.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:06,060 INFO executor.Executor: Finished task 0.0 in stage 52.0 (TID 53). 5130333 bytes result sent via BlockManager)
+2020-11-09 00:04:06,093 INFO client.TransportClientFactory: Successfully created connection to fairlight.nsqdc.city.ac.uk/10.207.1.110:37809 after 5 ms (0 ms spent in bootstraps)
+2020-11-09 00:04:06,164 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 52.0 (TID 53) in 265 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:06,164 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 52.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:06,165 INFO scheduler.DAGScheduler: ResultStage 52 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419) finished in 0.277 s
+2020-11-09 00:04:06,165 INFO scheduler.DAGScheduler: Job 12 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:06,165 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 52: Stage finished
+2020-11-09 00:04:06,166 INFO scheduler.DAGScheduler: Job 12 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:419, took 0.282207 s
+2020-11-09 00:04:06,166 INFO storage.BlockManagerInfo: Removed taskresult_53 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 4.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:10,720 INFO codegen.CodeGenerator: Code generated in 10.831056 ms
+2020-11-09 00:04:10,740 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425
+2020-11-09 00:04:10,741 INFO scheduler.DAGScheduler: Got job 13 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425) with 1 output partitions
+2020-11-09 00:04:10,741 INFO scheduler.DAGScheduler: Final stage: ResultStage 56 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425)
+2020-11-09 00:04:10,741 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 54, ShuffleMapStage 55)
+2020-11-09 00:04:10,742 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:10,743 INFO scheduler.DAGScheduler: Submitting ResultStage 56 (MapPartitionsRDD[157] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425), which has no missing parents
+2020-11-09 00:04:10,753 INFO memory.MemoryStore: Block broadcast_27 stored as values in memory (estimated size 250.7 KiB, free 22.2 GiB)
+2020-11-09 00:04:10,755 INFO memory.MemoryStore: Block broadcast_27_piece0 stored as bytes in memory (estimated size 66.2 KiB, free 22.2 GiB)
+2020-11-09 00:04:10,755 INFO storage.BlockManagerInfo: Added broadcast_27_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.2 KiB, free: 22.2 GiB)
+2020-11-09 00:04:10,756 INFO spark.SparkContext: Created broadcast 27 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:10,756 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 56 (MapPartitionsRDD[157] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:10,756 INFO scheduler.TaskSchedulerImpl: Adding task set 56.0 with 1 tasks
+2020-11-09 00:04:10,758 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 56.0 (TID 54, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:10,758 INFO executor.Executor: Running task 0.0 in stage 56.0 (TID 54)
+2020-11-09 00:04:10,768 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:10,769 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3886 - SHARED_BUCKETS.nullCount#3885) > 0)
+2020-11-09 00:04:10,769 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3896 - MH_SIM.nullCount#3895) > 0)
+2020-11-09 00:04:10,769 INFO columnar.InMemoryTableScanExec: Predicate (SHARED_BUCKETS#2425 = 0) generates partition filter: ((SHARED_BUCKETS.lowerBound#3884 <= 0) AND (0 <= SHARED_BUCKETS.upperBound#3883))
+2020-11-09 00:04:10,824 INFO executor.Executor: Finished task 0.0 in stage 56.0 (TID 54). 417640 bytes result sent to driver
+2020-11-09 00:04:10,825 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 56.0 (TID 54) in 68 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:10,825 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 56.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:10,826 INFO scheduler.DAGScheduler: ResultStage 56 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425) finished in 0.082 s
+2020-11-09 00:04:10,826 INFO scheduler.DAGScheduler: Job 13 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:10,826 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 56: Stage finished
+2020-11-09 00:04:10,827 INFO scheduler.DAGScheduler: Job 13 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:425, took 0.086794 s
+2020-11-09 00:04:11,220 INFO codegen.CodeGenerator: Code generated in 8.353002 ms
+2020-11-09 00:04:11,238 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431
+2020-11-09 00:04:11,240 INFO scheduler.DAGScheduler: Got job 14 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431) with 1 output partitions
+2020-11-09 00:04:11,240 INFO scheduler.DAGScheduler: Final stage: ResultStage 60 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431)
+2020-11-09 00:04:11,240 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 58, ShuffleMapStage 59)
+2020-11-09 00:04:11,240 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:11,240 INFO scheduler.DAGScheduler: Submitting ResultStage 60 (MapPartitionsRDD[162] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431), which has no missing parents
+2020-11-09 00:04:11,251 INFO memory.MemoryStore: Block broadcast_28 stored as values in memory (estimated size 250.9 KiB, free 22.2 GiB)
+2020-11-09 00:04:11,254 INFO memory.MemoryStore: Block broadcast_28_piece0 stored as bytes in memory (estimated size 66.3 KiB, free 22.2 GiB)
+2020-11-09 00:04:11,254 INFO storage.BlockManagerInfo: Added broadcast_28_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.3 KiB, free: 22.2 GiB)
+2020-11-09 00:04:11,255 INFO spark.SparkContext: Created broadcast 28 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:11,255 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 60 (MapPartitionsRDD[162] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:11,255 INFO scheduler.TaskSchedulerImpl: Adding task set 60.0 with 1 tasks
+2020-11-09 00:04:11,256 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 60.0 (TID 55, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:11,257 INFO executor.Executor: Running task 0.0 in stage 60.0 (TID 55)
+2020-11-09 00:04:11,269 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:11,270 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(SHARED_BUCKETS#2425) generates partition filter: ((SHARED_BUCKETS.count#3961 - SHARED_BUCKETS.nullCount#3960) > 0)
+2020-11-09 00:04:11,270 INFO columnar.InMemoryTableScanExec: Predicate isnotnull(MH_SIM#2440) generates partition filter: ((MH_SIM.count#3971 - MH_SIM.nullCount#3970) > 0)
+2020-11-09 00:04:11,317 INFO executor.Executor: Finished task 0.0 in stage 60.0 (TID 55). 369645 bytes result sent to driver
+2020-11-09 00:04:11,321 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 60.0 (TID 55) in 64 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:11,321 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 60.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:11,321 INFO scheduler.DAGScheduler: ResultStage 60 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431) finished in 0.079 s
+2020-11-09 00:04:11,322 INFO scheduler.DAGScheduler: Job 14 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:11,322 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 60: Stage finished
+2020-11-09 00:04:11,322 INFO scheduler.DAGScheduler: Job 14 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:431, took 0.083646 s
+2020-11-09 00:04:11,698 INFO codegen.CodeGenerator: Code generated in 5.870429 ms
+2020-11-09 00:04:11,704 INFO codegen.CodeGenerator: Code generated in 4.900269 ms
+2020-11-09 00:04:11,735 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449
+2020-11-09 00:04:11,736 INFO scheduler.DAGScheduler: Got job 15 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449) with 1 output partitions
+2020-11-09 00:04:11,736 INFO scheduler.DAGScheduler: Final stage: ResultStage 64 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449)
+2020-11-09 00:04:11,736 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 63, ShuffleMapStage 62)
+2020-11-09 00:04:11,737 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:11,737 INFO scheduler.DAGScheduler: Submitting ResultStage 64 (MapPartitionsRDD[170] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449), which has no missing parents
+2020-11-09 00:04:11,748 INFO memory.MemoryStore: Block broadcast_29 stored as values in memory (estimated size 254.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:11,750 INFO memory.MemoryStore: Block broadcast_29_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:11,751 INFO storage.BlockManagerInfo: Added broadcast_29_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:11,751 INFO spark.SparkContext: Created broadcast 29 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:11,751 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 64 (MapPartitionsRDD[170] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:11,751 INFO scheduler.TaskSchedulerImpl: Adding task set 64.0 with 1 tasks
+2020-11-09 00:04:11,752 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 64.0 (TID 56, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:11,753 INFO executor.Executor: Running task 0.0 in stage 64.0 (TID 56)
+2020-11-09 00:04:11,766 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:11,771 INFO codegen.CodeGenerator: Code generated in 3.836046 ms
+2020-11-09 00:04:11,780 INFO codegen.CodeGenerator: Code generated in 4.816101 ms
+2020-11-09 00:04:11,793 INFO codegen.CodeGenerator: Code generated in 8.974411 ms
+2020-11-09 00:04:17,987 INFO python.PythonUDFRunner: Times: total = 6189, boot = -714255, init = 714271, finish = 6173
+2020-11-09 00:04:18,004 INFO memory.MemoryStore: Block taskresult_56 stored as bytes in memory (estimated size 7.9 MiB, free 22.2 GiB)
+2020-11-09 00:04:18,004 INFO storage.BlockManagerInfo: Added taskresult_56 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 7.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:18,004 INFO executor.Executor: Finished task 0.0 in stage 64.0 (TID 56). 8304743 bytes result sent via BlockManager)
+2020-11-09 00:04:18,056 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 64.0 (TID 56) in 6304 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:18,056 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 64.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:18,058 INFO scheduler.DAGScheduler: ResultStage 64 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449) finished in 6.319 s
+2020-11-09 00:04:18,058 INFO storage.BlockManagerInfo: Removed taskresult_56 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 7.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:18,058 INFO scheduler.DAGScheduler: Job 15 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:18,058 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 64: Stage finished
+2020-11-09 00:04:18,058 INFO scheduler.DAGScheduler: Job 15 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:449, took 6.323421 s
+2020-11-09 00:04:24,905 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455
+2020-11-09 00:04:24,907 INFO scheduler.DAGScheduler: Got job 16 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455) with 1 output partitions
+2020-11-09 00:04:24,907 INFO scheduler.DAGScheduler: Final stage: ResultStage 68 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455)
+2020-11-09 00:04:24,907 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 66, ShuffleMapStage 67)
+2020-11-09 00:04:24,908 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:24,908 INFO scheduler.DAGScheduler: Submitting ResultStage 68 (MapPartitionsRDD[175] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455), which has no missing parents
+2020-11-09 00:04:24,919 INFO memory.MemoryStore: Block broadcast_30 stored as values in memory (estimated size 254.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:24,921 INFO memory.MemoryStore: Block broadcast_30_piece0 stored as bytes in memory (estimated size 66.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:24,921 INFO storage.BlockManagerInfo: Added broadcast_30_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:24,922 INFO spark.SparkContext: Created broadcast 30 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:24,922 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 68 (MapPartitionsRDD[175] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:24,922 INFO scheduler.TaskSchedulerImpl: Adding task set 68.0 with 1 tasks
+2020-11-09 00:04:24,923 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 68.0 (TID 57, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:24,924 INFO executor.Executor: Running task 0.0 in stage 68.0 (TID 57)
+2020-11-09 00:04:24,932 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:32,179 INFO python.PythonUDFRunner: Times: total = 7237, boot = -22039, init = 22051, finish = 7225
+2020-11-09 00:04:32,196 INFO memory.MemoryStore: Block taskresult_57 stored as bytes in memory (estimated size 7.9 MiB, free 22.2 GiB)
+2020-11-09 00:04:32,196 INFO storage.BlockManagerInfo: Added taskresult_57 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 7.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:32,196 INFO executor.Executor: Finished task 0.0 in stage 68.0 (TID 57). 8304743 bytes result sent via BlockManager)
+2020-11-09 00:04:32,231 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 68.0 (TID 57) in 7308 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:32,231 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 68.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:32,232 INFO scheduler.DAGScheduler: ResultStage 68 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455) finished in 7.322 s
+2020-11-09 00:04:32,233 INFO storage.BlockManagerInfo: Removed taskresult_57 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 7.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:32,233 INFO scheduler.DAGScheduler: Job 16 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:32,233 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 68: Stage finished
+2020-11-09 00:04:32,233 INFO scheduler.DAGScheduler: Job 16 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:455, took 7.327406 s
+2020-11-09 00:04:38,924 INFO codegen.CodeGenerator: Code generated in 7.378567 ms
+2020-11-09 00:04:38,944 INFO spark.SparkContext: Starting job: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485
+2020-11-09 00:04:38,945 INFO scheduler.DAGScheduler: Got job 17 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485) with 1 output partitions
+2020-11-09 00:04:38,945 INFO scheduler.DAGScheduler: Final stage: ResultStage 72 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485)
+2020-11-09 00:04:38,945 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 70, ShuffleMapStage 71)
+2020-11-09 00:04:38,946 INFO scheduler.DAGScheduler: Missing parents: List()
+2020-11-09 00:04:38,946 INFO scheduler.DAGScheduler: Submitting ResultStage 72 (MapPartitionsRDD[180] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485), which has no missing parents
+2020-11-09 00:04:38,956 INFO memory.MemoryStore: Block broadcast_31 stored as values in memory (estimated size 249.6 KiB, free 22.2 GiB)
+2020-11-09 00:04:38,957 INFO memory.MemoryStore: Block broadcast_31_piece0 stored as bytes in memory (estimated size 65.7 KiB, free 22.2 GiB)
+2020-11-09 00:04:38,958 INFO storage.BlockManagerInfo: Added broadcast_31_piece0 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 65.7 KiB, free: 22.2 GiB)
+2020-11-09 00:04:38,958 INFO spark.SparkContext: Created broadcast 31 from broadcast at DAGScheduler.scala:1200
+2020-11-09 00:04:38,958 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 72 (MapPartitionsRDD[180] at toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485) (first 15 tasks are for partitions Vector(0))
+2020-11-09 00:04:38,958 INFO scheduler.TaskSchedulerImpl: Adding task set 72.0 with 1 tasks
+2020-11-09 00:04:38,959 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 72.0 (TID 58, fairlight.nsqdc.city.ac.uk, executor driver, partition 0, PROCESS_LOCAL, 7761 bytes)
+2020-11-09 00:04:38,960 INFO executor.Executor: Running task 0.0 in stage 72.0 (TID 58)
+2020-11-09 00:04:38,973 INFO storage.BlockManager: Found block rdd_78_0 locally
+2020-11-09 00:04:39,109 INFO memory.MemoryStore: Block taskresult_58 stored as bytes in memory (estimated size 6.9 MiB, free 22.2 GiB)
+2020-11-09 00:04:39,110 INFO storage.BlockManagerInfo: Added taskresult_58 in memory on fairlight.nsqdc.city.ac.uk:37809 (size: 6.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:39,110 INFO executor.Executor: Finished task 0.0 in stage 72.0 (TID 58). 7227070 bytes result sent via BlockManager)
+2020-11-09 00:04:39,135 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 72.0 (TID 58) in 176 ms on fairlight.nsqdc.city.ac.uk (executor driver) (1/1)
+2020-11-09 00:04:39,135 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 72.0, whose tasks have all completed, from pool 
+2020-11-09 00:04:39,137 INFO storage.BlockManagerInfo: Removed taskresult_58 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 6.9 MiB, free: 22.2 GiB)
+2020-11-09 00:04:39,137 INFO scheduler.DAGScheduler: ResultStage 72 (toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485) finished in 0.189 s
+2020-11-09 00:04:39,137 INFO scheduler.DAGScheduler: Job 17 is finished. Cancelling potential speculative or zombie tasks for this job
+2020-11-09 00:04:39,137 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 72: Stage finished
+2020-11-09 00:04:39,137 INFO scheduler.DAGScheduler: Job 17 finished: toPandas at /home/enterprise.internal.city.ac.uk/aczx101/JaccardSIM/DLSH.py:485, took 0.193774 s
+2020-11-09 00:04:39,235 INFO storage.BlockManagerInfo: Removed broadcast_26_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.2 KiB, free: 22.2 GiB)
+2020-11-09 00:04:39,238 INFO storage.BlockManagerInfo: Removed broadcast_29_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:39,241 INFO storage.BlockManagerInfo: Removed broadcast_31_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 65.7 KiB, free: 22.2 GiB)
+2020-11-09 00:04:39,244 INFO storage.BlockManagerInfo: Removed broadcast_30_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.6 KiB, free: 22.2 GiB)
+2020-11-09 00:04:39,247 INFO storage.BlockManagerInfo: Removed broadcast_27_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.2 KiB, free: 22.2 GiB)
+2020-11-09 00:04:39,257 INFO storage.BlockManagerInfo: Removed broadcast_28_piece0 on fairlight.nsqdc.city.ac.uk:37809 in memory (size: 66.3 KiB, free: 22.2 GiB)
+2020-11-09 00:04:48,798 INFO server.AbstractConnector: Stopped Spark@5f52bd35{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+2020-11-09 00:04:48,801 INFO ui.SparkUI: Stopped Spark web UI at http://fairlight.nsqdc.city.ac.uk:4042
+2020-11-09 00:04:48,822 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2020-11-09 00:04:48,849 INFO memory.MemoryStore: MemoryStore cleared
+2020-11-09 00:04:48,850 INFO storage.BlockManager: BlockManager stopped
+2020-11-09 00:04:48,855 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2020-11-09 00:04:48,862 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2020-11-09 00:04:48,872 INFO spark.SparkContext: Successfully stopped SparkContext
+2020-11-09 00:04:49,857 INFO util.ShutdownHookManager: Shutdown hook called
+2020-11-09 00:04:49,858 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8
+2020-11-09 00:04:49,863 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-75f7c207-7a33-4135-808b-e522c8ba52d7
+2020-11-09 00:04:49,867 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-84f47bf9-2e8a-420c-94b0-f462175edae8/pyspark-39ff9b10-d6e3-4a24-acdd-8dff19d35de7
+	Command being timed: "spark-submit --master local[8] --driver-memory 42g --packages org.mongodb.spark:mongo-spark-connector_2.12:2.4.2 --conf spark.mongodb.input.uri=mongodb://city-projects:dbsZPUMXm7QB8WgP@c4dm-xenserv-virt5.eecs.qmul.ac.uk JaccardSIM/DLSH.py"
+	User time (seconds): 642.99
+	System time (seconds): 65.81
+	Percent of CPU this job got: 88%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:19.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9920392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38083509
+	Voluntary context switches: 282992
+	Involuntary context switches: 2182553
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 109352
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
