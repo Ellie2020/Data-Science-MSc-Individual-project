@@ -15,24 +15,24 @@ It computes also the superimposed histograms of Jaccard and weighted Jaccard sim
 It computes the statistics for Jaccard and weighted Jaccard similarity.
 
 
------------------------------ SONG TRIPLETS ------------------------------------------------------------------------------------------------------------------------------
+----------------------------- SONG TRIPLETS --------------------------------------------------------------------------------------------------------------
 TLSH.py   
 This is the main source code for TRIPLETS, computes Jaccard similarity, MinHash similarity, LSH banding technique, metrics for MinHash similarity vs Jaccard similarity. It computes TP, TN, FP, FN for LSH, S-curve for probability of being a candidate triplets vs MinHash similarity. It computes simple Jaccard similarity and weighted Jaccard similarity for triplets of songs
 
-------------------------------- SERVER -----------------------------------------------------------------------------------------------------------------------------------
+------------------------------- SERVER --------------------------------------------------------------------------------------------------------------------
 
 runSparkMongo.sh   
 file was used to run the python/Pyspark files (above) in the City's server
 runSparkMongo.sh source code was provided by Dr J. Pauwels 
 
------------------------------- SOFTWARES ----------------------------------------------------------------------------------------------------------------------------------
+------------------------------ SOFTWARES --------------------------------------------------------------------------------------------------------------------
 PuTTy was used as user interface between my PC and the City server to submit the experiments.
 
 FileZilla was used as user interface between my PC and the City server to transfer files, code generated png, csv and output text documents.
 
 OpenVPNConnect was used to connect to the server remotely.
 
------------------------------ Python Packages -------------------------------------------------------------------------------------------------------------------------------
+----------------------------- Python Packages ---------------------------------------------------------------------------------------------------------------
 Pyplot and python pandas.
 Pyspark for Big Data.
 Python Notebooks.
