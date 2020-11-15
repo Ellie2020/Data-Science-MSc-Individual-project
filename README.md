@@ -1,5 +1,15 @@
 # Data-Science-MSc-Individual-project
-SOURCE CODE PYTHON FILES ARE STORED HERE
+
+# FOLDERS:  
+
+- Notebook  
+- ResultsMetrics  
+- S-curves  (for pairs)
+- S-curves_triplets  
+- Time_Memory (experiments run on the server)
+- Source code  (python files and shell file run in the server)  
+
+# Files in Source code:
 
 DLSH.py    MAIN source code for pairs LSH via MinHash similarity   
 
@@ -15,5 +25,6 @@ README.txt detailed description for each python file
 
 several notebooks with the plots of chapter 3
 
-FOLDERS:
+
+
 
