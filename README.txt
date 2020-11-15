@@ -54,7 +54,7 @@ Python Notebooks.
 
 All the ppython files are stored in a repository on GITHUB.
 
-DLSH.py, LSH_SIM_MH.py, WJS_JS.py, TLSH.py, runSparkMongo.sh have the connector to MongoDB credentials removed as personal information of Dr. Johan Pauwels
+DLSH.py, LSH_SIM_MH.py, WJS_JS.py, TLSH.py, runSparkMongo.sh have the connector to MongoDB credentials removed.
 
 Python Notebooks for other plots are also stored in the GITHUB repository.
 ====================================================================================================================================================
