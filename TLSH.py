@@ -57,14 +57,14 @@ p=338563   ### large prime number for MinHash function
 m=20117    ### large prime number for MinHash function
 m1=20117   ### large prime number for LSH function
 ########################################
-## Connector to the MongoDB database owned by Dr. Johan Pauwels. 
-## The connector was provided by Dr. Johan Pauwels
+## Connector to the MongoDB database owned by Dr Johan Pauwels. 
+## The connector was provided by Dr Johan Pauwels
 sc = pyspark.SparkContext.getOrCreate()
 spark = pyspark.sql.SparkSession.builder \
     .config("xxxxxxxxxxxxxxxxxxxxxxxxx", xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)\
     .getOrCreate()
 
-####################### similarity theshold ###############################################
+####################### similarity threshold ###############################################
 
 def SIM_threshold(number_bands, number_minhashfunctions):
      '''Given number of bands and lenght of MinHash signature
