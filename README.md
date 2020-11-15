@@ -14,3 +14,6 @@ runSparkMongo.sh  sh file to run the python files on the server
 README.txt detailed description for each python file  
 
 several notebooks with the plots of chapter 3
+
+FOLDERS:
+
