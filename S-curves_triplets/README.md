@@ -1,1 +1,1 @@
-This the folder for triplets
+This is the folder for triplets
